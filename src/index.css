@@ -13,11 +13,12 @@
 }
 body {
   font-size: 1.6rem;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgb(116, 115, 115),
     rgb(56, 56, 56),
     #313131
-  );
+  ); */
+  background: rgb(27, 27, 27);
   color: white;
 }

@@ -88,7 +88,7 @@ const Landing = ({ location }) => {
         <section className="about_us">
           <h2>Fine Sound Academy</h2>
           <AnimationOnScroll
-            animateIn="animate__bounceInLeft"
+            animateIn="animate__fadeIn"
             animateOnce={true}
           >
             <div className="about_section">
@@ -115,10 +115,7 @@ const Landing = ({ location }) => {
               </ul>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll
-            animateIn="animate__bounceInRight"
-            animateOnce={true}
-          >
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
             <div className="about_section">
               <ul>
                 <h3>Team</h3>
@@ -144,7 +141,7 @@ const Landing = ({ location }) => {
             </div>
           </AnimationOnScroll>
           <AnimationOnScroll
-            animateIn="animate__bounceInLeft"
+            animateIn="animate__fadeIn"
             animateOnce={true}
           >
             <div className="about_section">

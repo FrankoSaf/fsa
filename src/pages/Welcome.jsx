@@ -6,7 +6,7 @@ const Welcome = ({ setLocation }) => {
     <div className="welcome">
       <h1>Wilkommen bei der Fine Sound Academy</h1>
       <div>
-        <h3>Wählen Sie den Standort</h3>
+        <h3>Wähle deinen Standort</h3>
         <div className="location">
           <NavLink
             to="/home"

@@ -90,7 +90,7 @@ h2 {
   height: 80rem;
   margin-bottom: 5rem;
 }
-.about_section ul {
+.about_list-main {
   width: 50%;
   height: 100%;
   display: flex;
@@ -164,7 +164,7 @@ nav .probe_button {
 .probe_button:hover {
   color: #cfa528;
   background: transparent;
-  border: 2px solid #cfa528;
+  outline: 2px solid #cfa528;
   cursor: pointer;
 }
 .social {
@@ -175,14 +175,14 @@ nav .probe_button {
 .social:hover {
   transform: scale(1.5);
 }
-input {
-  padding: 1rem;
+.inputs {
+  padding: 1.5rem 1rem;
   font-size: 2rem;
   width: 80%;
   background: none;
   border: none;
   color: white;
-  border: 2px solid #ad8848;
+  background-color: #222222;
   margin-bottom: 2rem;
   border-radius: 20px;
 }
@@ -190,23 +190,25 @@ textarea {
   background: none;
   width: 80% !important;
   border: none;
-  border: 2px solid #ad8848;
+  background-color: #222222;
   font-size: 2rem;
-  color: white;
-  padding: 1rem;
+  color: rgb(136, 134, 134);
+  padding: 1.5rem 1rem;
   resize: none;
   border-radius: 20px;
+  height: 15rem;
 }
-input:focus {
+.inputs:focus {
   outline: none;
 }
 textarea::placeholder {
-  color: rgb(214, 214, 214);
+  color: rgb(136, 134, 134);
   transform: translate(1rem, 1rem) !important;
   font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
-input::placeholder {
-  color: rgb(214, 214, 214);
+.inputs::placeholder {
+  color: rgb(136, 134, 134);
   font-size: 2rem;
 }
 
@@ -222,13 +224,14 @@ input::placeholder {
 }
 select {
   width: 80%;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   font-size: 2rem;
   cursor: pointer;
   background: none;
   border: none;
-  color: rgb(214, 214, 214);
-  border: 2px solid #ad8848;
+  background-color: #222222;
+  color: rgb(136, 134, 134);
+
   appearance: none; /* remove default arrow icon */
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -239,7 +242,6 @@ select {
 
 select:focus {
   outline: none;
-  border: 2px solid #ad8848;
 }
 
 /* style the options */
@@ -250,7 +252,12 @@ select option {
 
 form input[type="submit"] {
   width: 20rem;
-
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 20px;
   margin-top: 2rem;
   border-radius: 5px;
   background: #ad8848;
@@ -260,9 +267,62 @@ form input[type="submit"] {
   margin-bottom: 5rem;
   width: 100%;
 }
+.svg-holder {
+  background-color: #222222;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact svg {
-  color: #25d366;
+  color: white;
+
   font-size: 3rem;
+}
+.contact_intro h3 {
+  margin-bottom: 1rem;
+}
+.contact_intro p {
+  line-height: 2.5rem;
+}
+.whatsapp button {
+  width: 20rem;
+  background-color: #2db742;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  height: 5rem;
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+}
+.who_radio {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.who_radio > div {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tarif_list {
+  padding-left: 5rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+.tarif_list li {
+  margin-top: 0.8rem;
+}
+.list_check {
+  color: gold;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 @media screen and (max-width: 900px) {
   .about_section {

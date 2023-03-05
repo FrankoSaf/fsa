@@ -5,18 +5,13 @@ import gitarre from "../assets/images/Gitarre.png";
 import klavier from "../assets/images/Klavier.png";
 import drums from "../assets/images/Schlagzeug.png";
 import Gesang from "../assets/images/Gesang.png";
-import lesson from "../assets/images/Lesson.jpg";
 import logo from "../assets/images/Logo.png";
 import school from "../assets/images/School.jpg";
 import team from "../assets/images/Team.jpg";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import {
-  IoLogoInstagram,
-  IoLogoFacebook,
-  IoLogoYoutube,
-  IoLogoWhatsapp,
-} from "react-icons/io";
+import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
+import { BsWhatsapp, BsCheckCircleFill } from "react-icons/bs";
 import { MdLocationPin, MdPhone, MdMail } from "react-icons/md";
 const Landing = ({ location }) => {
   return (
@@ -87,52 +82,99 @@ const Landing = ({ location }) => {
         </section>
         <section className="about_us">
           <h2>Fine Sound Academy</h2>
-          <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOnce={true}
-          >
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
             <div className="about_section">
               <div className="about_images">
                 <img src={school} alt="" />
               </div>
-              <ul>
+              <ul className="about_list-main">
                 <h3>Die Schule</h3>
                 <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam saepe sequi aspernatur nulla distinctio possimus
-                  incidunt? Saepe earum laudantium tempore?
+                  - Du möchtest ein Instrument lernen? Wir unterstützen dich
+                  gerne dabei. Wir bieten dir den Freiraum, in dem du sowohl
+                  durch Einzel- als auch Gruppenunterricht die Möglichkeit hast,
+                  deine Musikalität, dein Talent und alles, was zur
+                  Verwirklichung deiner musikalischen Ziele gehört, zu
+                  entwickeln. Dabei spielt es keine Rolle, ob du erst neu
+                  anfängst oder schon Erfahrung mitbringst.
                 </li>
                 <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
+                  - Durch das Spielen und Singen bestimmter Stücke und Songs
+                  erlangen unsere Schüler das nötige Wissen über
+                  unterschiedliche Musikstile und lernen diese in der Praxis
+                  kennen. Hauptziel ist dabei immer, unsere Schüler so zu
+                  motivieren, sodass sie ihr inneres Gespür für Musik entwickeln
+                  und ohne Angst ihre Fähigkeiten austesten können.
                 </li>
                 <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
+                  - Weil du keine Nummer für uns bist, gibt es bei uns keinen
+                  starren Lehrplan. Wir gehen auf dich ein und schneiden den
+                  Unterricht gezielt auf dich und deine individuellen
+                  Bedürfnisse und Interessen zu. Dabei erkennen wir
+                  Schwachstellen und Stärken und arbeiten gemeinsam mit dir
+                  daran.
+                </li>
+                <li>
+                  - Falls dir also in erster Linie ein tolles Endergebnis und
+                  natürlich auch Spaß wichtig sind, bist du bei uns an der
+                  richtigen Adresse!
                 </li>
               </ul>
             </div>
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
             <div className="about_section">
-              <ul>
-                <h3>Team</h3>
+              <ul className="about_list-main">
+                <h3>Unser Angebot</h3>
                 <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam saepe sequi aspernatur nulla distinctio possimus
-                  incidunt? Saepe earum laudantium tempore?
+                  <h4>Tarif SOLO</h4>
+                  <p>
+                    Einzelunterricht: voller Fokus auf dich und dein Instrument.
+                  </p>
+                  <ul className="tarif_list">
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      30 oder 45 min
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      ab 85$/Monat
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      3,6 oder 12 Monate Vertragslauferzeit
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      Kostenlose Probestunde
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
-                </li>
-                <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
+                  <h4>Tarif GRUPPE</h4>
+                  <p>- mehr Spaß und Freude am gemeinsamen Musik machen</p>
+                  <ul className="tarif_list">
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      30 oder 45 min
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      2-4 Tielnehmer
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      ab 69$/Monat
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />6 Monate
+                      Vertragslaufzeit
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      Kostenlose Probestunde
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <div className="about_images">
@@ -140,52 +182,99 @@ const Landing = ({ location }) => {
               </div>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOnce={true}
-          >
-            <div className="about_section">
-              <div className="about_images">
-                <img src={lesson} alt="" />
-              </div>
-              <ul>
-                <h3>Standort</h3>
-                <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Ipsam saepe sequi aspernatur nulla distinctio possimus
-                  incidunt? Saepe earum laudantium tempore?
-                </li>
-                <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
-                </li>
-                <li>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis officia ratione sunt dignissimos tenetur nam
-                  voluptates facilis suscipit beatae earum.
-                </li>
-              </ul>
-            </div>
-          </AnimationOnScroll>
           <button className="probe_button">Kostenlose Probestunde</button>
         </section>
-        <section className="contact" style={{ background: "rgb(51, 51, 51)" }}>
+        <section className="contact" style={{ background: "rgb(30, 30, 30)" }}>
           <h2>Buche jetzt deine kostenlose Probestunde</h2>
           <div className="contact_details">
+            <div className="information">
+              <div className="contact_intro">
+                <h3>Contact information</h3>
+                <p style={{ width: "60ch" }}>
+                  Wann ist der richtige Zeitpunkt um ein Instrument zu erlernen?
+                  Genau jetzt! Wir unterrichten Kinder, Jugendliche und
+                  Erwachsene - bei uns ist jeder erwünscht! Unsere jahrelange
+                  Erfahrung zeigt, dass sich in jeder Altersstufe Erfolge
+                  erzielen lassen.
+                </p>
+              </div>
+              <div className="information_details">
+                <div className="svg-holder">
+                  <MdLocationPin />
+                </div>
+                {location === "Düsseldorf" ? (
+                  <p>Kaiserstraße 28, 40479 Düsseldorf</p>
+                ) : (
+                  <p>Neumarkt 18, 41460 Neuss</p>
+                )}
+              </div>
+              <div className="information_details">
+                <div className="svg-holder">
+                  <MdPhone />
+                </div>
+                <p>01514 1273622</p>
+              </div>
+              <div className="information_details">
+                <div className="svg-holder">
+                  <MdMail />
+                </div>
+                <p>t.damjanovic@modernmusicschool.com</p>
+              </div>
+              <div className="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=4917664209354">
+                  <button>
+                    <BsWhatsapp /> Whatsapp
+                  </button>
+                </a>
+              </div>
+            </div>
             <form action="">
+              <div>
+                <select name="instrument" id="instrument">
+                  <option value="" selected disabled>
+                    Anrede:
+                  </option>
+                  <option value="klavir">Herr</option>
+                  <option value="Gesang">Frau</option>
+                </select>
+              </div>
               <div>
                 <input
                   type="text"
                   id="first-name"
                   placeholder="Vor- und Nachname"
+                  className="inputs"
                 />
               </div>
               <div>
-                <input type="email" id="email" placeholder="Email" />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  className="inputs"
+                />
               </div>
               <div>
-                <input type="phone" id="phone" placeholder="Telefon" />
+                <input
+                  type="phone"
+                  id="phone"
+                  placeholder="Telefon"
+                  className="inputs"
+                />
+              </div>
+              <div className="who_radio">
+                <div>
+                  <input type="checkbox" name="mich" id="mich" />
+                  <label htmlFor="mich">
+                    Ich möchte <span>mich selbst</span> anmelden.
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" name="kinder" id="kinder" />
+                  <label htmlFor="kinder">
+                    Ich möchte <span>mein Kind/meine Kinder</span> anmelden.
+                  </label>
+                </div>
               </div>
               <div>
                 <select name="instrument" id="instrument">
@@ -210,38 +299,6 @@ const Landing = ({ location }) => {
               </div>
               <input type="submit" value="Buchen!" />
             </form>
-            <div className="information">
-              <div>
-                <h3>Contact information</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit, eum
-                </p>
-              </div>
-              <div className="information_details">
-                <MdLocationPin />
-                {location === "Düsseldorf" ? (
-                  <p>Kaiserstraße 28, 40479 Düsseldorf</p>
-                ) : (
-                  <p>Neumarkt 18, 41460 Neuss</p>
-                )}
-              </div>
-              <div className="information_details">
-                <MdPhone />
-                <p>01514 1273622</p>
-              </div>
-              <div className="information_details">
-                <MdMail />
-                <p>t.damjanovic@modernmusicschool.com</p>
-              </div>
-              <div className="information_details">
-                <a href="https://api.whatsapp.com/send?phone=4917664209354">
-                  <button>
-                    <IoLogoWhatsapp /> Whatsapp
-                  </button>
-                </a>
-              </div>
-            </div>
           </div>
         </section>
       </main>

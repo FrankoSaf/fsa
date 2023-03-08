@@ -58,7 +58,9 @@ const Landing = ({ location }) => {
           <h2>INSTRUMENTE: Das unrerrichten wir</h2>
           <ul className="instrument_list">
             <li>
-              <img src={klavier} alt="" />
+              <div>
+                <img src={klavier} alt="" />
+              </div>
               <h4>Klavier</h4>
               <p className="instrument-text">
                 Wegen seiner Vielseitigkeit und großen Bandbreite besonders
@@ -67,7 +69,9 @@ const Landing = ({ location }) => {
               </p>
             </li>
             <li>
-              <img src={Gesang} alt="" />
+              <div>
+                <img src={Gesang} alt="" />
+              </div>
               <h4>Gesang</h4>
               <p className="instrument-text">
                 {" "}
@@ -77,7 +81,9 @@ const Landing = ({ location }) => {
               </p>
             </li>
             <li>
-              <img src={gitarre} alt="" />
+              <div>
+                <img src={gitarre} alt="" />
+              </div>
               <h4>Gitarre</h4>
               <p className="instrument-text">
                 Die Geschicklichkeit von Gitarristen fasziniert dich und du
@@ -87,7 +93,9 @@ const Landing = ({ location }) => {
               </p>
             </li>
             <li>
-              <img src={bass} alt="" />
+              <div>
+                <img src={bass} alt="" />
+              </div>
               <h4>Bass</h4>
               <p className="instrument-text">
                 Oft unterschätzt, jedoch unverzichtbar. Für alle Fans der tiefen
@@ -96,7 +104,9 @@ const Landing = ({ location }) => {
               </p>
             </li>
             <li>
-              <img src={drums} alt="" />
+              <div>
+                <img src={drums} alt="" />
+              </div>
               <h4>Schlagzeug</h4>
               <p className="instrument-text">
                 Du steckst voller Energie und möchtest gerne den Takt angeben?
@@ -109,7 +119,11 @@ const Landing = ({ location }) => {
         </section>
         <section className="about_us">
           <h2>Fine Sound Academy</h2>
-          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+          <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOnce={true}
+            style={{ width: "100%" }}
+          >
             <div className="about_section">
               <div className="about_images">
                 <img src={school} alt="" />
@@ -149,7 +163,11 @@ const Landing = ({ location }) => {
               </ul>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+          <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOnce={true}
+            style={{ width: "100%" }}
+          >
             <div className="about_section">
               <ul className="about_list-main">
                 <h3>Unser Angebot</h3>

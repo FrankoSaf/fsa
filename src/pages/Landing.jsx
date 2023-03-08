@@ -59,23 +59,50 @@ const Landing = ({ location }) => {
           <ul className="instrument_list">
             <li>
               <img src={klavier} alt="" />
-              <p>Piano</p>
+              <h4>Klavier</h4>
+              <p className="instrument-text">
+                Wegen seiner Vielseitigkeit und großen Bandbreite besonders
+                beliebt. Im Klavierunterricht lernst du alles, was dazu gehört,
+                um über das reine Klimpern auf den Tasten hinaus zu kommen.
+              </p>
             </li>
             <li>
               <img src={Gesang} alt="" />
-              <p>Gesang</p>
+              <h4>Gesang</h4>
+              <p className="instrument-text">
+                {" "}
+                Das wohl persönlichste aller Instrumente: deine Stimme. Erlerne
+                im Gesangsunterricht alles von der richtigen Atemtechnik, Klang-
+                und Stimmbildung bishin zur Performance.
+              </p>
             </li>
             <li>
               <img src={gitarre} alt="" />
-              <p>Gitarre</p>
+              <h4>Gitarre</h4>
+              <p className="instrument-text">
+                Die Geschicklichkeit von Gitarristen fasziniert dich und du
+                träumst davon, dein eigenes Solo zu spielen? Ob E- oder
+                Konzertgitarre - meistere die Saiten mithilfe unserer Anleitung
+                im Gitarrenunterricht.
+              </p>
             </li>
             <li>
               <img src={bass} alt="" />
-              <p>Bass</p>
+              <h4>Bass</h4>
+              <p className="instrument-text">
+                Oft unterschätzt, jedoch unverzichtbar. Für alle Fans der tiefen
+                Klänge und alle, die originell sind, ist der Bassunterricht das
+                Richtige. Verbinde hierbei Harmonie und Rhythmus.
+              </p>
             </li>
             <li>
               <img src={drums} alt="" />
-              <p>Schlagzeug</p>
+              <h4>Schlagzeug</h4>
+              <p className="instrument-text">
+                Du steckst voller Energie und möchtest gerne den Takt angeben?
+                Trainiere im Schlagzeugunterricht deine Koordinationsfähigkeit
+                und dein Taktgefühl mit vollem Körpereinsatz.
+              </p>
             </li>
           </ul>
           <button className="probe_button">Kostenlose Probestunde</button>

@@ -4,7 +4,7 @@ import Welcome from "./pages/Welcome";
 import { useState } from "react";
 import { useMemo } from "react";
 import useLocalStorage from "use-local-storage";
-import Map from "./components/Map";
+
 function App() {
   const [location, setLocation] = useLocalStorage("");
 

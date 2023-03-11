@@ -26,7 +26,6 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 h1 {
   font-size: 6rem;
@@ -133,8 +132,9 @@ h2 {
 .contact_details {
   width: 100%;
   display: flex;
+  padding-top: 2rem;
   justify-content: space-evenly;
-  background: rgb(30, 30, 30);
+  /* background: rgb(30, 30, 30); */
 }
 form {
   display: flex;
@@ -235,6 +235,7 @@ textarea::placeholder {
   display: flex;
   font-size: 2rem;
   align-items: center;
+  margin: .5rem 0;
 }
 select {
   width: 80%;
@@ -301,6 +302,7 @@ form input[type="submit"] {
 .contact_intro p {
   line-height: 2.5rem;
 }
+
 .whatsapp button {
   width: 20rem;
   background-color: #2db742;
@@ -312,6 +314,7 @@ form input[type="submit"] {
   color: white;
   font-size: 2rem;
   justify-content: center;
+  margin:1rem 0;
 }
 .who_radio {
   display: flex;

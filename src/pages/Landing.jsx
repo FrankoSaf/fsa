@@ -50,7 +50,7 @@ const Landing = ({ location }) => {
           <h1>FINE SOUND ACADEMY</h1>
 
           <p>
-            Deine Musikschule in{" "}
+            Deine Musikschule in
             {location[0].toUpperCase() + location.slice(1, location.length)}
           </p>
         </div>

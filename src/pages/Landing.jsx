@@ -170,7 +170,7 @@ const Landing = ({ location }) => {
           >
             <div className="about_section">
               <div className="about_images">
-                <img src={school} alt="" />
+                <img src={drumsBanner} alt="" />
               </div>
               <ul className="about_list-main">
                 <h3>Über uns</h3>
@@ -267,7 +267,7 @@ const Landing = ({ location }) => {
                 </li>
               </ul>
               <div className="about_images">
-                <img src={team} alt="" />
+                <img src={bassBanner} alt="" />
               </div>
             </div>
           </AnimationOnScroll>

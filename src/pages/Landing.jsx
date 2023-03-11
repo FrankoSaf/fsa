@@ -19,7 +19,7 @@ import drumsBanner from "../assets/otherimages/drums-2599508.jpg";
 import handsBanner from "../assets/otherimages/hands-1851500.jpg";
 import mainBanner from "../assets/images/Banner.jpg";
 import musicianBanner from "../assets/otherimages/musician-2943109.jpg";
-
+import microphoneBanner from "../assets/otherimages/microphone-780178.jpg"
 const images = [
   mainBanner,
   handsBanner,
@@ -72,10 +72,17 @@ const Landing = ({ location }) => {
         <div
           className="banner"
           style={{
-            backgroundImage: `url(${images[currentImageIndex]})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "100vh",
+            background: `linear-gradient(to right,  rgba(32, 32, 32, 0.589), rgba(8, 8, 8, 0.76), rgba(0, 0, 0, 0.884)),url(${images[currentImageIndex]}) center/cover no-repeat`,
+            height: "80vh",
+            margin: "0 auto",
+            textAlign: "center",
+            border: "1px solid black",
+            color: "white",
+            marginTop: "2rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <h1>FINE SOUND ACADEMY</h1>

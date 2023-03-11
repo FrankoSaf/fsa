@@ -235,7 +235,7 @@ const Landing = ({ location }) => {
             <button className="probe_button">Kostenlose Probestunde</button>
           </a>
         </section>
-        <section className="contact" style={{ background: "rgb(30, 30, 30)" }}>
+        <section className="contact" >
           <h2>Buche jetzt deine kostenlose Probestunde</h2>
           <div className="contact_details">
             <div className="information">

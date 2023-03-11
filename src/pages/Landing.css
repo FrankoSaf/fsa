@@ -140,6 +140,7 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  background: rgb(30, 30, 30);
 }
 form {
   display: flex;

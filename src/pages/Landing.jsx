@@ -12,8 +12,31 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
 import { BsWhatsapp, BsCheckCircleFill } from "react-icons/bs";
-import { MdLocationPin, MdPhone, MdMail } from "react-icons/md";
+import { MdPhone, MdMail } from "react-icons/md";
+import { useState, useEffect } from "react";
+import bassBanner from "../assets/otherimages/bass-6024074.jpg";
+import drumsBanner from "../assets/otherimages/drums-2599508.jpg";
+import handsBanner from "../assets/otherimages/hands-1851500.jpg";
+import mainBanner from "../assets/images/Banner.jpg";
+import musicianBanner from "../assets/otherimages/musician-2943109.jpg";
+
+const images = [
+  mainBanner,
+  handsBanner,
+  bassBanner,
+  musicianBanner,
+  drumsBanner,
+];
 const Landing = ({ location }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((currentImageIndex + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [currentImageIndex]);
+
   return (
     <>
       <header>
@@ -46,7 +69,15 @@ const Landing = ({ location }) => {
             <button className="probe_button">Kostenlose Probestunde</button>
           </a>
         </nav>
-        <div className="banner">
+        <div
+          className="banner"
+          style={{
+            backgroundImage: `url(${images[currentImageIndex]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "100vh",
+          }}
+        >
           <h1>FINE SOUND ACADEMY</h1>
 
           <p>
@@ -118,7 +149,9 @@ const Landing = ({ location }) => {
             </li>
           </ul>
           <a href="#contact_form">
-            <button className="probe_button">Kostenlose Probestunde</button>
+            <button className="probe_button">
+              Buche jetzt deine kostenlose Probestunde
+            </button>
           </a>
         </section>
         <section className="about_us">
@@ -133,7 +166,7 @@ const Landing = ({ location }) => {
                 <img src={school} alt="" />
               </div>
               <ul className="about_list-main">
-                <h3>Die Schule</h3>
+                <h3>Über uns</h3>
                 <li>
                   - Du möchtest ein Instrument lernen? Wir unterstützen dich
                   gerne dabei. Wir bieten dir den Freiraum, in dem du sowohl
@@ -232,10 +265,10 @@ const Landing = ({ location }) => {
             </div>
           </AnimationOnScroll>
           <a href="#contact_form">
-            <button className="probe_button">Kostenlose Probestunde</button>
+            <button className="probe_button">Jetzt Termin vereinbaren</button>
           </a>
         </section>
-        <section className="contact" >
+        <section className="contact">
           <h2>Buche jetzt deine kostenlose Probestunde</h2>
           <div className="contact_details">
             <div className="information">

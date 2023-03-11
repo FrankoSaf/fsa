@@ -42,7 +42,9 @@ const Landing = ({ location }) => {
               alt="Fine sound academy logo"
             />
           </div>
-          <button className="probe_button">Kostenlose Probestunde</button>
+          <a href="#contact_form">
+            <button className="probe_button">Kostenlose Probestunde</button>
+          </a>
         </nav>
         <div className="banner">
           <h1>FINE SOUND ACADEMY</h1>
@@ -115,7 +117,9 @@ const Landing = ({ location }) => {
               </p>
             </li>
           </ul>
-          <button className="probe_button">Kostenlose Probestunde</button>
+          <a href="#contact_form">
+            <button className="probe_button">Kostenlose Probestunde</button>
+          </a>
         </section>
         <section className="about_us">
           <h2>Fine Sound Academy</h2>
@@ -227,7 +231,9 @@ const Landing = ({ location }) => {
               </div>
             </div>
           </AnimationOnScroll>
-          <button className="probe_button">Kostenlose Probestunde</button>
+          <a href="#contact_form">
+            <button className="probe_button">Kostenlose Probestunde</button>
+          </a>
         </section>
         <section className="contact" style={{ background: "rgb(30, 30, 30)" }}>
           <h2>Buche jetzt deine kostenlose Probestunde</h2>
@@ -244,13 +250,26 @@ const Landing = ({ location }) => {
                 </p>
               </div>
               <div className="information_details">
-                <div className="svg-holder">
-                  <MdLocationPin />
-                </div>
                 {location === "Düsseldorf" ? (
-                  <p>Kaiserstraße 28, 40479 Düsseldorf</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.1947540757183!2d6.776958851886429!3d51.233908038382665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca1ff5bfb4df%3A0x18e93d4c1c37df9d!2sModern%20Music%20School%20D%C3%BCsseldorf%20-%20Musikschule%20-%20Musikunterricht!5e0!3m2!1shr!2sde!4v1678542146410!5m2!1shr!2sde"
+                    width="600"
+                    height="350"
+                    style={{ border: "0", borderRadius: "10px" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 ) : (
-                  <p>Neumarkt 18, 41460 Neuss</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.988033289749!2d6.685724802280624!3d51.20087217580428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8b454dc1dc957%3A0xcf17b9f87f4bf3cb!2sModern%20Music%20School%20Neuss%20%7C%20Musikschule%20%7C%20Musikunterricht%20%7C!5e0!3m2!1shr!2sde!4v1678541976060!5m2!1shr!2sde"
+                    width="600"
+                    height="350"
+                    style={{ border: "0", borderRadius: "10px" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 )}
               </div>
               <div className="information_details">
@@ -273,7 +292,7 @@ const Landing = ({ location }) => {
                 </a>
               </div>
             </div>
-            <form action="">
+            <form action="" id="contact_form">
               <div>
                 <select name="instrument" id="instrument">
                   <option value="" selected disabled>

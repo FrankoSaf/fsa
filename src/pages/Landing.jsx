@@ -65,7 +65,7 @@ const Landing = ({ location }) => {
               alt="Fine sound academy logo"
             />
           </div>
-          <a href="#contact_form">
+          <a href="#contact_form" style={{ flex: "calc(1 / 3)" }}>
             <button className="probe_button">Kostenlose Probestunde</button>
           </a>
         </nav>
@@ -76,7 +76,7 @@ const Landing = ({ location }) => {
             height: "80vh",
             margin: "0 auto",
             textAlign: "center",
-            border: "1px solid black",
+
             color: "white",
             marginTop: "2rem",
             display: "flex",
@@ -88,14 +88,14 @@ const Landing = ({ location }) => {
           <h1>FINE SOUND ACADEMY</h1>
 
           <p>
-            Deine Musikschule in
+            Deine Musikschule in{" "}
             {location[0].toUpperCase() + location.slice(1, location.length)}
           </p>
         </div>
       </header>
       <main>
         <section className="instrumente">
-          <h2>INSTRUMENTE: Das unrerrichten wir</h2>
+          <h2>INSTRUMENTE: Das unterrichten wir</h2>
           <ul className="instrument_list">
             <li>
               <div>
@@ -175,16 +175,16 @@ const Landing = ({ location }) => {
               <ul className="about_list-main">
                 <h3>Über uns</h3>
                 <li>
-                  - Du möchtest ein Instrument lernen? Wir unterstützen dich
-                  gerne dabei. Wir bieten dir den Freiraum, in dem du sowohl
-                  durch Einzel- als auch Gruppenunterricht die Möglichkeit hast,
-                  deine Musikalität, dein Talent und alles, was zur
-                  Verwirklichung deiner musikalischen Ziele gehört, zu
-                  entwickeln. Dabei spielt es keine Rolle, ob du erst neu
-                  anfängst oder schon Erfahrung mitbringst.
+                  Du möchtest ein Instrument lernen? Wir unterstützen dich gerne
+                  dabei. Wir bieten dir den Freiraum, in dem du sowohl durch
+                  Einzel- als auch Gruppenunterricht die Möglichkeit hast, deine
+                  Musikalität, dein Talent und alles, was zur Verwirklichung
+                  deiner musikalischen Ziele gehört, zu entwickeln. Dabei spielt
+                  es keine Rolle, ob du erst neu anfängst oder schon Erfahrung
+                  mitbringst.
                 </li>
                 <li>
-                  - Durch das Spielen und Singen bestimmter Stücke und Songs
+                  Durch das Spielen und Singen bestimmter Stücke und Songs
                   erlangen unsere Schüler das nötige Wissen über
                   unterschiedliche Musikstile und lernen diese in der Praxis
                   kennen. Hauptziel ist dabei immer, unsere Schüler so zu
@@ -192,7 +192,7 @@ const Landing = ({ location }) => {
                   und ohne Angst ihre Fähigkeiten austesten können.
                 </li>
                 <li>
-                  - Weil du keine Nummer für uns bist, gibt es bei uns keinen
+                  Weil du keine Nummer für uns bist, gibt es bei uns keinen
                   starren Lehrplan. Wir gehen auf dich ein und schneiden den
                   Unterricht gezielt auf dich und deine individuellen
                   Bedürfnisse und Interessen zu. Dabei erkennen wir
@@ -200,7 +200,7 @@ const Landing = ({ location }) => {
                   daran.
                 </li>
                 <li>
-                  - Falls dir also in erster Linie ein tolles Endergebnis und
+                  Falls dir also in erster Linie ein tolles Endergebnis und
                   natürlich auch Spaß wichtig sind, bist du bei uns an der
                   richtigen Adresse!
                 </li>
@@ -218,7 +218,7 @@ const Landing = ({ location }) => {
                 <li>
                   <h4>Tarif SOLO</h4>
                   <p>
-                    Einzelunterricht: voller Fokus auf dich und dein Instrument.
+                    Einzelunterricht: voller Fokus auf dich und dein Instrument
                   </p>
                   <ul className="tarif_list">
                     <li>
@@ -227,11 +227,11 @@ const Landing = ({ location }) => {
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      ab 85$/Monat
+                      ab 85€/Monat
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      3,6 oder 12 Monate Vertragslauferzeit
+                      3,6 oder 12 Monate Vertragslaufzeit
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
@@ -241,7 +241,10 @@ const Landing = ({ location }) => {
                 </li>
                 <li>
                   <h4>Tarif GRUPPE</h4>
-                  <p>- mehr Spaß und Freude am gemeinsamen Musik machen</p>
+                  <p>
+                    Gruppenunterricht: mehr Spaß und Freude am gemeinsamen Musik
+                    machen
+                  </p>
                   <ul className="tarif_list">
                     <li>
                       <BsCheckCircleFill className="list_check" />
@@ -249,11 +252,11 @@ const Landing = ({ location }) => {
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      2-4 Tielnehmer
+                      2-4 Teilnehmer
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      ab 69$/Monat
+                      ab 69€/Monat
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />6 Monate
@@ -292,7 +295,7 @@ const Landing = ({ location }) => {
                 <p
                   style={{
                     width: "60ch",
-                    marginBottom:'2rem'
+                    marginBottom: "2rem",
                   }}
                 >
                   Wann ist der richtige Zeitpunkt um ein Instrument zu erlernen?
@@ -344,8 +347,6 @@ const Landing = ({ location }) => {
                   ></iframe>
                 )}
               </div>
-
-        
             </div>
             <form action="" id="contact_form">
               <div>

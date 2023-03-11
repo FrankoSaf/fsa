@@ -4,7 +4,7 @@ import "./Welcome.css";
 const Welcome = ({ setLocation }) => {
   return (
     <div className="welcome">
-      <h1>Wilkommen bei der Fine Sound Academy</h1>
+      <h1>Willkommen bei der Fine Sound Academy</h1>
       <div>
         <h3>Wähle deinen Standort</h3>
         <div className="location">

@@ -85,12 +85,14 @@ const Landing = ({ location }) => {
             justifyContent: "center",
           }}
         >
+          <div className="shadow top_shadow"></div>
           <h1>FINE SOUND ACADEMY</h1>
 
           <p>
             Deine Musikschule in{" "}
             {location[0].toUpperCase() + location.slice(1, location.length)}
           </p>
+          <div className="shadow bottom_shadow"></div>
         </div>
       </header>
       <main>
@@ -170,7 +172,11 @@ const Landing = ({ location }) => {
           >
             <div className="about_section">
               <div className="about_images">
-                <img src={drumsBanner} alt="" />
+                <img
+                  className="logo_img"
+                  src={logo}
+                  alt="Fine sound academy logo"
+                />
               </div>
               <ul className="about_list-main">
                 <h3>Über uns</h3>

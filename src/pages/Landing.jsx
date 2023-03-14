@@ -212,61 +212,62 @@ const Landing = ({ location }) => {
             animateOnce={true}
             style={{ width: "100%" }}
           >
-            <div className="offer">
-              <div className="offer_square">
-         
-
-                <h4>Tarif SOLO</h4>
-                <p>
-                  Einzelunterricht: voller Fokus auf dich und dein Instrument
-                </p>
-                <ul className="tarif_list">
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    30 oder 45 min
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    ab 85€/Monat
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    3,6 oder 12 Monate Vertragslaufzeit
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    Kostenlose Probestunde
-                  </li>
-                </ul>
-              </div>
-              <div className="offer_square">
-                <h4>Tarif GRUPPE</h4>
-                <p>
-                  Gruppenunterricht: mehr Spaß und Freude am gemeinsamen Musik
-                  machen
-                </p>
-                <ul className="tarif_list">
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    30 oder 45 min
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    2-4 Teilnehmer
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    ab 69€/Monat
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />6 Monate
-                    Vertragslaufzeit
-                  </li>
-                  <li>
-                    <BsCheckCircleFill className="list_check" />
-                    Kostenlose Probestunde
-                  </li>
-                </ul>
+            <div className="offer_section">
+              <h3>Unser Angebot</h3>
+              <div className="offer">
+                <div className="offer_square">
+                  <h4>Tarif SOLO</h4>
+                  <p>
+                    Einzelunterricht: voller Fokus auf dich und dein Instrument
+                  </p>
+                  <ul className="tarif_list">
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      30 oder 45 min
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      ab 85€/Monat
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      3,6 oder 12 Monate Vertragslaufzeit
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      Kostenlose Probestunde
+                    </li>
+                  </ul>
+                </div>
+                <div className="offer_square">
+                  <h4>Tarif GRUPPE</h4>
+                  <p>
+                    Gruppenunterricht: mehr Spaß und Freude am gemeinsamen Musik
+                    machen
+                  </p>
+                  <ul className="tarif_list">
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      30 oder 45 min
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      2-4 Teilnehmer
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      ab 69€/Monat
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />6 Monate
+                      Vertragslaufzeit
+                    </li>
+                    <li>
+                      <BsCheckCircleFill className="list_check" />
+                      Kostenlose Probestunde
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </AnimationOnScroll>

@@ -109,6 +109,12 @@ h2 {
   padding: 10rem;
   font-size: 3rem;
 }
+.offer_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .offer {
   width: 80%;
   margin: 0 auto;
@@ -133,10 +139,10 @@ h2 {
   font-size: 1.6rem;
   font-style: italic;
 }
-.about_section ul h3 {
+h3 {
   text-align: center;
   font-size: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-decoration: underline #cfa528;
 }
 .about_section ul li {

@@ -19,31 +19,39 @@ nav {
 .banner {
   margin: 0 auto;
   text-align: center;
-
-  border: 1px solid black;
   color: white;
   margin-top: 2rem;
-  height: 80vh;
+
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 }
+
+.banner_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
 .shadow {
   height: 4rem;
   width: 100%;
+  z-index: 10000;
   position: absolute;
 }
 .bottom_shadow {
   bottom: 0;
-  background-color: black;
-  box-shadow: 0px -10px 20px black, 0px -30px 25px black;
+  background-color: #030303;
+  box-shadow: 0px -10px 20px #030303, 0px -30px 25px #030303;
 }
 .top_shadow {
   top: 0;
-  background-color: black;
-  box-shadow: 0px 10px 20px black, 0px 30px 25px black;
+  background-color: #030303;
+  box-shadow: 0px 10px 20px #030303, 0px 30px 25px #030303;
 }
 h1 {
   font-size: 6rem;
@@ -181,26 +189,6 @@ h3 {
   height: 80%;
   border-radius: 10px;
 }
-.contact_details {
-  width: 100%;
-  display: flex;
-  padding-top: 2rem;
-  justify-content: space-evenly;
-  /* background: rgb(30, 30, 30); */
-}
-form {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-form > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 
 .logo {
   display: flex;
@@ -240,147 +228,6 @@ nav .probe_button {
 }
 .social:hover {
   transform: scale(1.5);
-}
-.inputs {
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
-  width: 80%;
-  background: none;
-  border: none;
-  color: white;
-  background-color: #222222;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-}
-.inputs:focus {
-  border: 1px gold solid;
-}
-textarea {
-  background: none;
-  width: 80% !important;
-  border: none;
-  background-color: #222222;
-  font-size: 2rem;
-  color: rgb(136, 134, 134);
-  padding: 1.5rem 1rem;
-  resize: none;
-  border-radius: 20px;
-  height: 15rem;
-}
-.inputs:focus {
-  outline: none;
-}
-textarea::placeholder {
-  color: rgb(136, 134, 134);
-  transform: translate(1rem, 1rem) !important;
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-}
-.inputs::placeholder {
-  color: rgb(136, 134, 134);
-  font-size: 2rem;
-}
-
-.information {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.information_details {
-  display: flex;
-  font-size: 2rem;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-select {
-  width: 80%;
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-  background: none;
-  border: none;
-  background-color: #222222;
-  color: rgb(136, 134, 134);
-
-  appearance: none; /* remove default arrow icon */
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  padding-right: 3rem;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-}
-
-select:focus {
-  outline: none;
-}
-
-/* style the options */
-select option {
-  background-color: #222222;
-  color: white;
-}
-
-form input[type="submit"] {
-  width: 20rem;
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
-  border: none;
-  color: white;
-  margin-bottom: 2rem;
-  border-radius: 20px;
-  margin-top: 2rem;
-  border-radius: 5px;
-  background: #ad8848;
-}
-
-.contact {
-  margin-bottom: 5rem;
-  width: 100%;
-}
-.svg-holder {
-  background-color: #222222;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-}
-.contact svg {
-  color: white;
-
-  font-size: 3rem;
-}
-.contact_intro h3 {
-  margin-bottom: 1rem;
-}
-.contact_intro p {
-  line-height: 2.5rem;
-}
-
-.whatsapp button {
-  width: 20rem;
-  background-color: #2db742;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  height: 5rem;
-  color: white;
-  font-size: 2rem;
-  justify-content: center;
-  margin: 1rem 0;
-}
-.who_radio {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-.who_radio > div {
-  display: flex;
-  margin-bottom: 1rem;
-  width: 100%;
 }
 
 .tarif_list {

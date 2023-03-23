@@ -28,16 +28,28 @@ const MapSquare = () => {
             </p>
           </div> */}
       <div className="information_details">
-        <div className="svg-holder">
-          <MdPhone />
+        <div className="both_schools">
+          <div className="svg-holder">
+            <MdPhone />
+          </div>
+          <p>01514 1273622</p>
         </div>
-        <p>01514 1273622</p>
+        <div className="information_details">
+          <div className="svg-holder">
+            <MdMail />
+          </div>
+          <p>t.damjanovic@modernmusicschool.com</p>
+        </div>
       </div>
-      <div className="information_details">
-        <div className="svg-holder">
-          <MdMail />
+      <div className="addresses">
+        <div className="neuss_address">
+          <h5>Neuss</h5>
+          <p>Neumarkt 18, 41460</p>
         </div>
-        <p>t.damjanovic@modernmusicschool.com</p>
+        <div className="duesseldorf_address">
+          <h5>Düsseldorf</h5>
+          <p>Kaiserstraße 28, 40479</p>
+        </div>
       </div>
       <div className="whatsapp">
         <a href="https://api.whatsapp.com/send?phone=4917664209354">

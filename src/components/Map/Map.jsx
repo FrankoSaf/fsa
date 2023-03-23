@@ -7,7 +7,7 @@ import { mapStyles } from "../../assets/map";
 import mapMarker from "../../assets/images/MapMarkerFSA.png";
 const Map = ({ location, zoomLevel }) => {
   return (
-    <div className="map">
+    <div className="map" style={{ position: "relative" }}>
       <div className="google-map">
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY" }}
@@ -29,8 +29,11 @@ const Map = ({ location, zoomLevel }) => {
   );
 };
 const LocationPin = ({ text }) => (
-  <div className="pin">
-    <img src={mapMarker} alt="" className="marker" />
+  <div
+    className="pin"
+    style={{ position: "absolute", transform: "translate(-50%,-50%)" }}
+  >
+    <img src={mapMarker} alt="" className="marker" style={{ height: "100%" }} />
   </div>
 );
 export default Map;

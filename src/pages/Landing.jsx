@@ -26,9 +26,9 @@ const Landing = ({ location }) => {
     return () => clearInterval(interval);
   }, [currentImageIndex]);
   const location1 = {
-    center: { lat: 51.20123191909517, lng: 6.692897037904017 },
-    lat: 51.20195792823926,
-    lng: 6.689538911093469,
+    center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
+    lat: 51.200934234153095,
+    lng: 6.6902485237841995,
   };
   console.log(instrumentsList);
   return (
@@ -65,7 +65,12 @@ const Landing = ({ location }) => {
         </nav>
         <div className="banner">
           <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              position: "relative",
+              zIndex: "-1",
+            }}
             duration={4000}
             src={images[currentImageIndex]}
             alt=""
@@ -187,7 +192,7 @@ const Landing = ({ location }) => {
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      3,6 oder 12 Monate Vertragslaufzeit
+                      3, 6 oder 12 Monate Vertragslaufzeit
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
@@ -211,7 +216,7 @@ const Landing = ({ location }) => {
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />
-                      3,6 oder 12 Monate Vertragslaufzeit
+                      3, 6 oder 12 Monate Vertragslaufzeit
                     </li>
                     <li>
                       <BsCheckCircleFill className="list_check" />

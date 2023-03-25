@@ -14,7 +14,7 @@
 }
 
 .svg-holder {
-  background-color: #222222;
+  font-size: 2rem;
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
@@ -23,11 +23,17 @@
   align-items: center;
   margin-right: 1rem;
 }
-
+.whatsapp {
+  border-top: 2px solid #a38f52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .whatsapp button {
   width: 20rem;
   background-color: #2db742;
   display: flex;
+  opacity: 1;
   align-items: center;
   border: none;
   border-radius: 10px;
@@ -39,7 +45,9 @@
 }
 
 .information {
-  background-color: white;
+  background-color: black;
+  border: 0.6rem #cfa528 solid;
+  border-radius: 10px;
   opacity: 0.8;
   width: 50rem;
   height: 30rem;
@@ -48,4 +56,32 @@
   top: 50%;
   transform: translateY(-50%);
   right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+.both_schools {
+  border-bottom: 2px #a38f52 solid;
+}
+.both_schools > div {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.addresses {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.phones {
+  display: flex;
+
+  align-items: center;
+}
+.information div {
+  color: white;
 }

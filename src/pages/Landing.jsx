@@ -1,12 +1,10 @@
 import React from "react";
 import "./Landing.css";
-
 import logo from "../assets/images/Logo.png";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
-import { BsWhatsapp, BsCheckCircleFill } from "react-icons/bs";
-import { MdPhone, MdMail } from "react-icons/md";
+import { BsCheckCircleFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import bassBanner from "../assets/otherimages/bass-6024074.jpg";
 import drumsBanner from "../assets/otherimages/drums-2599508.jpg";
@@ -15,9 +13,14 @@ import musicianBanner from "../assets/otherimages/musician-2943109.jpg";
 import Map from "../components/Map/Map";
 import { instrumentsList } from "../assets/instrumentList";
 import CrossfadeImage from "react-crossfade-image";
+import useLocalStorage from "use-local-storage";
+import Modal from "./Modal";
+import Reviewers from "../components/Reviewers/Reviewers";
 const images = [handsBanner, bassBanner, musicianBanner, drumsBanner];
-const Landing = ({ location }) => {
+const Landing = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [location, setLocation] = useLocalStorage("");
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((currentImageIndex + 1) % images.length);
@@ -30,9 +33,14 @@ const Landing = ({ location }) => {
     lat: 51.200934234153095,
     lng: 6.6902485237841995,
   };
-  console.log(instrumentsList);
+  const location2 = {
+    center: { lat: 51.23399538994627, lng: 6.779174357670855 },
+    lat: 51.23399538994627,
+    lng: 6.779174357670855,
+  };
   return (
     <>
+      {!location && <Modal setLocation={setLocation} />}
       <header>
         <nav>
           <div className="nav_links">
@@ -67,7 +75,7 @@ const Landing = ({ location }) => {
           <CrossfadeImage
             style={{
               width: "100%",
-              height: "100%",
+
               position: "relative",
               zIndex: "-1",
             }}
@@ -81,7 +89,8 @@ const Landing = ({ location }) => {
 
             <p>
               Deine Musikschule in{" "}
-              {location[0].toUpperCase() + location.slice(1, location.length)}
+              {location &&
+                location[0].toUpperCase() + location.slice(1, location.length)}
             </p>
           </div>
           <div className="shadow bottom_shadow"></div>
@@ -90,15 +99,16 @@ const Landing = ({ location }) => {
       <main>
         <section className="instrumente">
           <h2>INSTRUMENTE: Das unterrichten wir</h2>
-
           <ul className="instrument_list">
             {instrumentsList.map((instrument, index) => {
+              const delay = (index + 1) * 500; // calculate delay based on index
               return (
                 <AnimationOnScroll
+                  key={index}
                   animateIn="animate__fadeInRight"
                   animateOnce={true}
-                  duration="1"
-                  delay={index === 0 ? 250 : `${(index + 1) * 500}`}
+                  duration={1}
+                  delay={delay}
                 >
                   <li>
                     <div>
@@ -121,6 +131,8 @@ const Landing = ({ location }) => {
         <section className="about_us">
           <h2>Fine Sound Academy</h2>
           <AnimationOnScroll
+            animatePreScroll={true}
+            offset={300}
             animateIn="animate__fadeIn"
             animateOnce={true}
             style={{ width: "100%" }}
@@ -168,6 +180,8 @@ const Landing = ({ location }) => {
               </ul>
             </div>
           </AnimationOnScroll>
+        </section>
+        <section>
           <AnimationOnScroll
             animateIn="animate__fadeIn"
             animateOnce={true}
@@ -257,8 +271,15 @@ const Landing = ({ location }) => {
             </div>
           </AnimationOnScroll>
         </section>
-
-        <Map location={location1} zoomLevel={17} />
+        <section className="reviewers_section">
+          <h3>Bewertungen</h3>
+          <Reviewers />
+        </section>
+        <Map
+          location={location === "Neuss" ? location1 : location2}
+          zoomLevel={17}
+          setLocation={setLocation}
+        />
       </main>
     </>
   );

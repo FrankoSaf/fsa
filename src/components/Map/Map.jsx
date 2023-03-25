@@ -5,7 +5,8 @@ import { ImLocation2 } from "react-icons/im";
 import MapSquare from "./MapSquare";
 import { mapStyles } from "../../assets/map";
 import mapMarker from "../../assets/images/MapMarkerFSA.png";
-const Map = ({ location, zoomLevel }) => {
+const Map = ({ location, zoomLevel, setLocation }) => {
+  console.log(location);
   return (
     <div className="map" style={{ position: "relative" }}>
       <div className="google-map">
@@ -24,7 +25,7 @@ const Map = ({ location, zoomLevel }) => {
           />
         </GoogleMapReact>
       </div>
-      <MapSquare />
+      <MapSquare setLocation={setLocation} />
     </div>
   );
 };

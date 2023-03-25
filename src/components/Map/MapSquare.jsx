@@ -2,7 +2,7 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdPhone, MdMail } from "react-icons/md";
 import "./map.css";
-const MapSquare = () => {
+const MapSquare = ({ setLocation }) => {
   return (
     <div className="information">
       {/* <div
@@ -29,26 +29,45 @@ const MapSquare = () => {
           </div> */}
       <div className="information_details">
         <div className="both_schools">
-          <div className="svg-holder">
-            <MdPhone />
-          </div>
-          <p>01514 1273622</p>
-        </div>
-        <div className="information_details">
-          <div className="svg-holder">
+          <div>
             <MdMail />
+
+            <a
+              href="mailto:info@finesoundacademy.com"
+              style={{ color: "white" }}
+            >
+              info@finesoundacademy.com
+            </a>
           </div>
-          <p>t.damjanovic@modernmusicschool.com</p>
         </div>
       </div>
       <div className="addresses">
         <div className="neuss_address">
-          <h5>Neuss</h5>
+          <h5
+            onClick={() => setLocation("Neuss")}
+            style={{ cursor: "pointer" }}
+          >
+            Neuss
+          </h5>
           <p>Neumarkt 18, 41460</p>
+          <div className="phones">
+            {/* <div>
+              <MdPhone />
+            </div> */}
+            <p>01514 1273622</p>
+          </div>
         </div>
         <div className="duesseldorf_address">
-          <h5>Düsseldorf</h5>
+          <h5 onClick={setLocation("Düsseldorf")} style={{ cursor: "pointer" }}>
+            Düsseldorf
+          </h5>
           <p>Kaiserstraße 28, 40479</p>
+          <div className="phones">
+            {/* <div >
+              <MdPhone />
+            </div> */}
+            <p>01514 1273622</p>
+          </div>
         </div>
       </div>
       <div className="whatsapp">

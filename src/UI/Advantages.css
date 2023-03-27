@@ -1,0 +1,54 @@
+.advantages_list-cont {
+  flex: 0.7;
+  height: 100%;
+
+  display: flex;
+  justify-content: end;
+}
+.advantages_list {
+  display: flex;
+  flex-direction: column;
+
+  height: 70%;
+  margin: auto 2rem auto 0;
+  justify-content: space-around;
+}
+.advantages_list p {
+  width: 40ch;
+}
+.advantages {
+  display: flex;
+  height: 80vh;
+}
+.advantages_image img {
+  width: 100%;
+  height: 100%;
+}
+.advantages_image {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+.image_shadows {
+  display: block;
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+}
+.left_shadow {
+  left: 0;
+  height: 100%;
+  width: 1rem;
+  box-shadow: -5px 0px 0px rgb(51,51,51),5px 0px 5px rgb(51, 51, 51), 10px 0px 10px rgb(51, 51, 51);
+}
+.top_shadow {
+  top: 0;
+  width: 100%;
+  height: 1rem;
+  box-shadow: 0px -5px 0px rgb(51,51,51),0px 5px 5px rgb(51, 51, 51), 0px -10px 10px rgb(51, 51, 51);
+}
+.bottom_shadow {
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  box-shadow:  0px 5px 0px rgb(51,51,51),0px -5px 5px rgb(51, 51, 51), 0px -10px 10px rgb(51, 51, 51);
+}

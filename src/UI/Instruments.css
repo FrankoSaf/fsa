@@ -1,0 +1,26 @@
+.title_deco {
+  display: flex;
+  align-items: center;
+}
+
+.instruments_list {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.instrument_cont {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.instrument_cont img {
+  height: 100%;
+  width: 100%;
+}
+.instruments_container {
+  background-color: grey;
+  height: 25vh;
+}

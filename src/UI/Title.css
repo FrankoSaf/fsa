@@ -1,0 +1,90 @@
+.intro {
+  display: flex;
+  height: 80vh;
+}
+
+.intro_image {
+  width: 50%;
+}
+.intro_image img {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 4.6rem;
+
+  position: relative;
+}
+.intro_text-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.info_text {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-width: 3px;
+  border-style: solid;
+  transform: translateX(9rem);
+  border-right: none;
+  border-image: linear-gradient(
+      to right,
+      gold,
+      rgb(255, 233, 108),
+      rgb(51, 51, 51)
+    )
+    1;
+}
+.intro_logo {
+  width: 10rem;
+  height: 10rem;
+}
+.intro_logo img {
+  width: 100%;
+  height: 100%;
+}
+.intro_infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.intro_titles {
+  flex: 0.4;
+  position: relative;
+  transform: translateX(10rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intro p {
+  width: 40ch;
+}
+.intro_titles a {
+  background: linear-gradient(to right, #b18d4d, #d1b970, #e5d588);
+  width: 20rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+.intro_social {
+  height: 5rem;
+
+  width: 70%;
+  margin: 0 auto;
+}
+.intro_social a {
+  width: 4rem;
+  height: 3rem;
+  display: inline-block;
+}
+.intro_social a svg {
+  width: 100%;
+  height: 100%;
+}

@@ -5,6 +5,8 @@
 
 .intro_image {
   width: 50%;
+  height: 70vh;
+  align-self: center;
 }
 .intro_image img {
   width: 100%;
@@ -40,9 +42,9 @@ h1 {
     )
     1;
 }
+
 .intro_logo {
-  width: 10rem;
-  height: 10rem;
+  flex: 0.7;
 }
 .intro_logo img {
   width: 100%;
@@ -52,10 +54,10 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 .intro_titles {
-  flex: 0.4;
+  flex: 0.3;
   position: relative;
   transform: translateX(10rem);
 

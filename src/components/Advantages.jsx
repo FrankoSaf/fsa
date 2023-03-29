@@ -1,7 +1,7 @@
 import React from "react";
 import EKG from "../assets/EKG.png";
 import "../UI/Advantages.css";
-import Micro from "../assets/otherimages/microphone-780178.jpg";
+import Micro  from "../assets/otherimages/IMG-6805.jpg";
 const Advantages = () => {
   return (
     <section>

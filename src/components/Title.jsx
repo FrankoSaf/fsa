@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/images/Logo.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
-import musicianBanner from "../assets/otherimages/musician-2943109.jpg";
+import musicianBanner from "../assets/otherimages/IMG-6805.jpg";
 import "../UI/Title.css";
 const Title = () => {
   return (
@@ -12,8 +12,6 @@ const Title = () => {
             <div className="intro_logo">
               <img src={logo} alt="School badge" />
             </div>
-            <a href="mailto:info@finesoundacademy.com">info@finesoundacademy</a>
-            <a href="tel:017664209354">017664209354</a>
           </div>
           <div className="intro_titles">
             <h1>FINE SOUND ACADEMY</h1>

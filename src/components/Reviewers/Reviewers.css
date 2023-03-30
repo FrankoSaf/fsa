@@ -2,19 +2,23 @@
   height: 52rem;
   padding: 2rem 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .swiper-slide {
   width: 37rem;
-  height: 30rem;
+  height: 40rem;
   position: relative;
-  background-color: black;
-  border: 0.6rem #cfa528 solid;
+  background-color: rgb(241, 241, 241);
+  color: black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 2rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 .reviewer_info {
   width: 80%;
@@ -55,6 +59,29 @@ h5 {
   bottom: 1rem;
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-prev {
+  opacity: 1;
+}
+.slider-controller {
+  width: 100%;
+
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swipe-image {
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.swipe-image img {
+  height: 50%;
+  width: 10rem;
+}
+.swipe-image span {
+  cursor: pointer;
 }

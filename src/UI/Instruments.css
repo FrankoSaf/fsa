@@ -21,6 +21,6 @@
   width: 100%;
 }
 .instruments_container {
-  background-color: grey;
+  background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
   height: 25vh;
 }

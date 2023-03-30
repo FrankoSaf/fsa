@@ -7,6 +7,7 @@
   width: 50%;
   height: 70vh;
   align-self: center;
+  position: relative;
 }
 .intro_image img {
   width: 100%;
@@ -29,7 +30,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-width: 3px;
   border-style: solid;
   transform: translateX(9rem);
@@ -59,14 +60,16 @@ h1 {
 .intro_titles {
   flex: 0.3;
   position: relative;
-  transform: translateX(10rem);
+  align-items: center;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .intro p {
-  width: 40ch;
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
 }
 .intro_titles a {
   background: linear-gradient(to right, #b18d4d, #d1b970, #e5d588);

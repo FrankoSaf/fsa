@@ -52,3 +52,6 @@ h2 {
 .title_deco {
   position: relative;
 }
+section {
+  margin-bottom: 5rem;
+}

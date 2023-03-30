@@ -5,28 +5,39 @@ import { ImLocation2 } from "react-icons/im";
 import MapSquare from "./MapSquare";
 import { mapStyles } from "../../assets/map";
 import mapMarker from "../../assets/images/MapMarkerFSA.png";
+import EKG from "../../assets/EKG.png";
 const Map = ({ location, zoomLevel, setLocation }) => {
   console.log(location);
   return (
-    <div className="map" style={{ position: "relative" }}>
-      <div className="google-map">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY" }}
-          defaultCenter={location.center}
-          defaultZoom={zoomLevel}
-          options={{
-            styles: mapStyles,
-          }}
-        >
-          <LocationPin
-            lat={location.lat}
-            lng={location.lng}
-            text={location.address}
-          />
-        </GoogleMapReact>
+    <section>
+      <div class="title_deco">
+        <div className="deco_cont">
+          <img src={EKG} alt="title decoration" />
+        </div>
+        <h2>KONTAKTIEREN SIE UNS</h2>
       </div>
-      <MapSquare setLocation={setLocation} />
-    </div>
+      <div className="map" style={{ position: "relative" }}>
+        <div className="google-map">
+          <GoogleMapReact
+            bootstrapURLKeys={{
+              key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY",
+            }}
+            defaultCenter={location.center}
+            defaultZoom={zoomLevel}
+            options={{
+              styles: mapStyles,
+            }}
+          >
+            <LocationPin
+              lat={location.lat}
+              lng={location.lng}
+              text={location.address}
+            />
+          </GoogleMapReact>
+        </div>
+        <MapSquare setLocation={setLocation} />
+      </div>
+    </section>
   );
 };
 const LocationPin = ({ text }) => (

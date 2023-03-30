@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/images/Logo.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
-import musicianBanner from "../assets/otherimages/IMG-6805.jpg";
+import musicianBanner from "../assets/otherimages/IMG_6805.jpeg";
 import "../UI/Title.css";
+import "../UI/Advantages.css";
 const Title = () => {
   return (
     <section className="intro">
@@ -14,7 +15,6 @@ const Title = () => {
             </div>
           </div>
           <div className="intro_titles">
-            <h1>FINE SOUND ACADEMY</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
               quis quae dolores, ab asperiores molestiae. Atque et doloremque
@@ -36,6 +36,9 @@ const Title = () => {
         </div>
       </div>
       <div className="intro_image">
+        <span className="image_shadows top_shadow"></span>
+        <span className="image_shadows left_shadow"></span>
+        <span className="image_shadows bottom_shadow"></span>
         <img src={musicianBanner} alt="" />
       </div>
     </section>

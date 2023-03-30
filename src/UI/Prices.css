@@ -1,0 +1,27 @@
+.price_list-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.price-card {
+  padding: 5rem 3rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.price-card h4 {
+  font-size: 3rem;
+}
+.price-desc {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.price-details li {
+  margin-bottom: 2rem;
+}

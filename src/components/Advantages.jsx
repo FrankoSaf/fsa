@@ -1,13 +1,12 @@
 import React from "react";
 import EKG from "../assets/EKG.png";
 import "../UI/Advantages.css";
-import Micro  from "../assets/otherimages/IMG-6805.jpg";
+import Micro from "../assets/otherimages/IMG_6827.jpeg";
 const Advantages = () => {
   return (
     <section>
       <div class="title_deco">
         <div className="deco_cont">
-          
           <img src={EKG} alt="title decoration" />
         </div>
         <h2>UNSERE VORTEILE</h2>

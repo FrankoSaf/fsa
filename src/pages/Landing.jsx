@@ -1,24 +1,18 @@
 import React from "react";
 import "./Landing.css";
-import logo from "../assets/images/Logo.png";
-import "animate.css/animate.min.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-
-import { BsCheckCircleFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
-import bassBanner from "../assets/otherimages/bass-6024074.jpg";
-import drumsBanner from "../assets/otherimages/drums-2599508.jpg";
-import handsBanner from "../assets/otherimages/hands-1851500.jpg";
 
 import Map from "../components/Map/Map";
 
 import useLocalStorage from "use-local-storage";
 import Modal from "./Modal";
-import Reviewers from "../components/Reviewers/Reviewers";
+
 import Title from "../components/Title";
 import Instruments from "../components/Instruments";
 import Advantages from "../components/Advantages";
 import Teachers from "../components/Teachers";
+import Prices from "../components/Prices";
+import Reviewers from "../components/Reviewers/Reviewers";
 const Landing = () => {
   const [location, setLocation] = useLocalStorage("");
 
@@ -38,6 +32,9 @@ const Landing = () => {
       <Instruments />
       <Advantages />
       <Teachers />
+      <Prices />
+      <Reviewers />
+      <Map location={location1} setLocation={setLocation} />
     </>
   );
 };

@@ -26,12 +26,12 @@ export const prices = [
     image: bg2,
   },
   {
-    name: "Tarif SOLO 45",
+    name: "Tarif GRUPPE",
     description: "Einzelunterrict: voller Fokus auf dich und dein Instrument",
     list: [
       "45 min",
-      "ab 128€/Monat",
-      "3, 6 oder 12 Monate Vertragslaufzeit",
+      "79€/Monat",
+      "6 Monate Vertragslaufzeit",
       "Kostenlose Probestunde",
     ],
     image: bg3,

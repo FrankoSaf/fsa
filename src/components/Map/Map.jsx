@@ -6,7 +6,7 @@ import MapSquare from "./MapSquare";
 import { mapStyles } from "../../assets/map";
 import mapMarker from "../../assets/images/MapMarkerFSA.png";
 import EKG from "../../assets/EKG.png";
-const Map = ({ location, zoomLevel, setLocation }) => {
+const Map = ({ location, zoomLevel }) => {
   console.log(location);
   return (
     <section>
@@ -14,7 +14,7 @@ const Map = ({ location, zoomLevel, setLocation }) => {
         <div className="deco_cont">
           <img src={EKG} alt="title decoration" />
         </div>
-        <h2>KONTAKTIEREN SIE UNS</h2>
+        <h2>UNSER STANDORT</h2>
       </div>
       <div className="map" style={{ position: "relative" }}>
         <div className="google-map">
@@ -23,7 +23,7 @@ const Map = ({ location, zoomLevel, setLocation }) => {
               key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY",
             }}
             defaultCenter={location.center}
-            defaultZoom={zoomLevel}
+            defaultZoom={17}
             options={{
               styles: mapStyles,
             }}
@@ -35,7 +35,7 @@ const Map = ({ location, zoomLevel, setLocation }) => {
             />
           </GoogleMapReact>
         </div>
-        <MapSquare setLocation={setLocation} />
+        <MapSquare />
       </div>
     </section>
   );

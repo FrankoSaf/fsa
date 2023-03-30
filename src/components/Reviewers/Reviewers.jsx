@@ -8,8 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import "./Reviewers.css";
-import EKG from "../../assets/EKG3.png";
-import EKG2 from "../../assets/EKG2.png";
+import EKG from "../../assets/EKG.png";
 const Reviewers = () => {
   const middleIndex = Math.floor(reviewers.length / 2); // calculate index of middle element
   return (
@@ -56,13 +55,11 @@ const Reviewers = () => {
         ))}
         <div className="slider-controller">
           <div className="swipe-image">
-            <img src={EKG2} alt="" />
             <span className="swiper-ekg-prev">Vorherige</span>
           </div>
 
           <div className="swipe-image">
             <span className="swiper-ekg-next">Nächste</span>
-            <img src={EKG} alt="" />
           </div>
         </div>
       </Swiper>

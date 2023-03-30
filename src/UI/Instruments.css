@@ -12,15 +12,22 @@
   justify-content: space-around;
 }
 .instrument_cont {
-  width: 10rem;
-  display: flex;
+  width: calc(100% / 5);
   flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  display: flex;
 }
 .instrument_cont img {
   height: 100%;
-  width: 100%;
+  width: 15rem;
 }
 .instruments_container {
   background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
-  height: 25vh;
+  height: 40vh;
+}
+.instrument_about {
+  margin-top: 2rem;
 }

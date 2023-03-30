@@ -9,7 +9,7 @@ const Teachers = () => {
         <div className="deco_cont">
           <img src={EKG} alt="title decoration" />
         </div>
-        <h2>DIE LEHRER</h2>
+        <h2>UNSER TEAM</h2>
       </div>
       <div className="teachers_container">
         {teachers.map((teacher, index) => (
@@ -20,10 +20,6 @@ const Teachers = () => {
                 alt=""
                 style={index === 3 ? { objectPosition: "top left" } : {}}
               />
-            </div>
-            <div className="teacher_text">
-              <p className="teacher_name">{teacher.name}</p>
-              <p className="teacher_instrument">{teacher.instrument}</p>
             </div>
           </div>
         ))}

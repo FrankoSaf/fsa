@@ -16,8 +16,10 @@ const Instruments = () => {
           {instrumentsList.map((instrument, index) => (
             <>
               <div className="instrument_cont">
-                <img src={instrument.image} alt={instrument.inName} />{" "}
-                <p>Lorem ipsum dolor</p>
+                <img src={instrument.image} alt={instrument.inName} />
+                <div className="instrument_about">
+                  <p className="instrument_text">{instrument.text}</p>
+                </div>
               </div>
             </>
           ))}

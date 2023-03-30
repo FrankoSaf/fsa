@@ -2,7 +2,7 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdPhone, MdMail } from "react-icons/md";
 import "./map.css";
-const MapSquare = ({ setLocation }) => {
+const MapSquare = () => {
   return (
     <div className="information">
       {/* <div
@@ -43,12 +43,7 @@ const MapSquare = ({ setLocation }) => {
       </div>
       <div className="addresses">
         <div className="neuss_address">
-          <h5
-            onClick={() => setLocation("Neuss")}
-            style={{ cursor: "pointer" }}
-          >
-            Neuss
-          </h5>
+          <h5 style={{ cursor: "pointer" }}>Neuss</h5>
           <p>Neumarkt 18, 41460</p>
           <div className="phones">
             {/* <div>
@@ -58,9 +53,7 @@ const MapSquare = ({ setLocation }) => {
           </div>
         </div>
         <div className="duesseldorf_address">
-          <h5 onClick={setLocation("Düsseldorf")} style={{ cursor: "pointer" }}>
-            Düsseldorf
-          </h5>
+          <h5>Düsseldorf</h5>
           <p>Kaiserstraße 28, 40479</p>
           <div className="phones">
             {/* <div >

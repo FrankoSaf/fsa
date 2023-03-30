@@ -17,18 +17,22 @@
   width: 40ch;
 }
 .advantages {
+  border-top: #c2a560 5px solid;
+  border-bottom: #c2a560 5px solid;
+  background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
+}
+.advantages_list-cont {
   display: flex;
-  height: 80vh;
+  height: 50vh;
+  align-items: center;
+
+  width: 80%;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
 }
-.advantages_image img {
-  width: 100%;
-  height: 100%;
-}
-.advantages_image {
-  flex: 1;
-  position: relative;
-  z-index: 10;
-}
+
 .image_shadows {
   display: block;
   background-color: rgb(54, 54, 54);

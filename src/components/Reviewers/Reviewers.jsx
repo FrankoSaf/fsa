@@ -1,6 +1,7 @@
 import React from "react";
 import { reviewers } from "../../assets/reviewers";
 import { AiFillStar } from "react-icons/ai";
+import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -53,13 +54,14 @@ const Reviewers = () => {
             <p className="reviewer_text">{reviewer.review}</p>
           </SwiperSlide>
         ))}
-        <div className="slider-controller">
-          <div className="swipe-image">
-            <span className="swiper-ekg-prev">Vorherige</span>
+        <div className="slider-controller ">
+          <div className="change swiper-ekg-prev">
+            <HiArrowLeft />
+            <span>Vorherige</span>
           </div>
-
-          <div className="swipe-image">
-            <span className="swiper-ekg-next">Nächste</span>
+          <div className="change swiper-ekg-next">
+            <span>Nächste</span>
+            <HiArrowRight />
           </div>
         </div>
       </Swiper>

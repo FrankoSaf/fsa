@@ -1,6 +1,6 @@
 .price_list-container {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -12,6 +12,8 @@
   text-align: center;
   justify-content: space-around;
   border-radius: 5px;
+  flex-wrap: wrap;
+  max-width: 32rem;
 }
 
 .price-card h4 {

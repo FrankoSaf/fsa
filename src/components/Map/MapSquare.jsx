@@ -1,74 +1,65 @@
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import { MdPhone, MdMail } from "react-icons/md";
+import Adresse from "../../assets/map/Adresse.png";
+import Email from "../../assets/map/EMail.png";
+import Number from "../../assets/map/Nummer.png";
 import "./map.css";
 const MapSquare = () => {
   return (
-    <div className="information">
-      {/* <div
-            className="contact_intro"
-            style={{
-              borderBottom: "2px #cfa528 solid",
-              marginBottom: "2rem",
-            }}
-          >
-            <h3 style={{ fontSize: "3rem", color: "#cfa528" }}>
-              Anmeldung zur kostenlosen Probestunde
-            </h3>
-            <p
-              style={{
-                width: "60ch",
-                marginBottom: "2rem",
-              }}
-            >
-              Wann ist der richtige Zeitpunkt um ein Instrument zu erlernen?
-              Genau jetzt! Wir unterrichten Kinder, Jugendliche und Erwachsene -
-              bei uns ist jeder erwünscht! Unsere jahrelange Erfahrung zeigt,
-              dass sich in jeder Altersstufe Erfolge erzielen lassen.
-            </p>
-          </div> */}
-      <div className="information_details">
-        <div className="both_schools">
-          <div>
-            <MdMail />
-
-            <a
-              href="mailto:info@finesoundacademy.com"
-              style={{ color: "white" }}
-            >
+    <div className="contact_square">
+      <div className="contact_details">
+        <div className="contact_details-sub">
+          <div className="contact-image">
+            <img src={Adresse} alt="" />
+          </div>
+          <div className="contact-text">
+            <h5 className="contact-title">Adresse:</h5>
+            <p>Neumarkt 18</p>
+            <p>41460 Neuss</p>
+          </div>
+        </div>
+        <div className="contact_details-sub">
+          <div className="contact-image">
+            <img src={Number} alt="" />
+          </div>
+          <div className="contact-text">
+            <h5 className="contact-title">Mobil:</h5>
+            <a href="phone:+4915141273622">015141273622</a>
+          </div>
+        </div>
+        <div className="contact_details-sub">
+          <div className="contact-image">
+            <img src={Email} alt="" />
+          </div>
+          <div className="contact-text">
+            <h5 className="contact-title">E-Mail:</h5>
+            <a href="mailto:info@finesoundacademy.com">
               info@finesoundacademy.com
             </a>
           </div>
         </div>
       </div>
-      <div className="addresses">
-        <div className="neuss_address">
-          <h5 style={{ cursor: "pointer" }}>Neuss</h5>
-          <p>Neumarkt 18, 41460</p>
-          <div className="phones">
-            {/* <div>
-              <MdPhone />
-            </div> */}
-            <p>01514 1273622</p>
-          </div>
+      <div className="information">
+        <div className="contact_whatsapp">
+          <a href="" class="formular">
+            ZUM KONTAKTFORMULAR
+          </a>
+
+          <a
+            className="whatsapp"
+            href="https://api.whatsapp.com/send?phone=4917664209354"
+          >
+            <div>
+              <BsWhatsapp />
+              <div className="wp_text">
+                <p style={{ fontFamily: "Maytra", fontSize: "3rem" }}>
+                  Schreibe uns bei
+                </p>
+                <p>WHATSAPP</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <div className="duesseldorf_address">
-          <h5>Düsseldorf</h5>
-          <p>Kaiserstraße 28, 40479</p>
-          <div className="phones">
-            {/* <div >
-              <MdPhone />
-            </div> */}
-            <p>01514 1273622</p>
-          </div>
-        </div>
-      </div>
-      <div className="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=4917664209354">
-          <button>
-            <BsWhatsapp /> Whatsapp
-          </button>
-        </a>
       </div>
     </div>
   );

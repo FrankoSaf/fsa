@@ -13,75 +13,96 @@
   position: relative;
 }
 
-.svg-holder {
-  font-size: 2rem;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+.contact_square {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-}
-.whatsapp {
-  border-top: 2px solid #a38f52;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whatsapp button {
-  width: 20rem;
-  background-color: #2db742;
-  display: flex;
-  opacity: 1;
-  align-items: center;
-  border: none;
-  border-radius: 10px;
-  height: 5rem;
-  color: white;
-  font-size: 2rem;
-  justify-content: center;
-  margin: 1rem 0;
-}
-
-.information {
-  background-color: black;
-  border: 0.6rem #cfa528 solid;
-  border-radius: 10px;
-  opacity: 0.8;
-  width: 50rem;
+  justify-content: space-between;
   height: 30rem;
-  color: black;
+  width: 50rem;
+  background-color: rgba(0, 0, 0, 0.801);
   position: absolute;
   top: 50%;
+  right: 10rem;
   transform: translateY(-50%);
-  right: 10%;
+  border-radius: 10px;
+}
+.contact_details {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 2rem;
+  align-items: space-between;
 }
-.both_schools {
-  border-bottom: 2px #a38f52 solid;
+.contact-image img {
+  width: 7rem;
+  height: 7rem;
 }
-.both_schools > div {
+.contact_details-sub {
   display: flex;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 10px;
 }
-.addresses {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-between;
+.contact-text {
+  flex: 1;
+  text-align: center;
 }
-.phones {
-  display: flex;
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 
+  font-family: "Maytra", sans-serif;
+  background: -webkit-linear-gradient(left, #6e5824, #d1ba71, #decc7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.information {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.information div {
-  color: white;
+.contact_whatsapp {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.whatsapp {
+  width: 100%;
+}
+.formular {
+  background: linear-gradient(to right, #867140, #d1ba71, #decc7f);
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 6.5rem;
+  height: 6.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.whatsapp {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  height: 6.5rem;
+}
+.whatsapp > div {
+  width: 100%;
+  background-color: #6cc964;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.whatsapp svg {
+  height: 100%;
+  flex: 0.5;
+}
+.wp_text {
+  display: flex;
+  flex-direction: column;
 }

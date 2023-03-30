@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-
+@font-face {
+  font-family: "Maytra";
+  src: url("./assets/fonts/Maytra-7BMEP.ttf") format("truetype"),
+    url("./assets/fonts/Maytra-w1Xg3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *::after,
 *::before {

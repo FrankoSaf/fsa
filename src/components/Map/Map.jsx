@@ -10,12 +10,12 @@ const Map = ({ location, zoomLevel }) => {
   console.log(location);
   return (
     <section>
-      <div class="title_deco">
+      {/* <div class="title_deco">
         <div className="deco_cont">
           <img src={EKG} alt="title decoration" />
         </div>
         <h2>UNSER STANDORT</h2>
-      </div>
+      </div> */}
       <div className="map" style={{ position: "relative" }}>
         <div className="google-map">
           <GoogleMapReact
@@ -23,7 +23,7 @@ const Map = ({ location, zoomLevel }) => {
               key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY",
             }}
             defaultCenter={location.center}
-            defaultZoom={17}
+            defaultZoom={16}
             options={{
               styles: mapStyles,
             }}

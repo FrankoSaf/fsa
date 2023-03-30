@@ -15,10 +15,9 @@ const Title = () => {
             </div>
           </div>
           <div className="intro_titles">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-              quis quae dolores, ab asperiores molestiae. Atque et doloremque
-              eaque vero?
+            <p style={{ fontSize: "2rem" }}>
+              Musikunterricht in Neuss und Düsseldorf. Du möchtest ein
+              Instrument lernen? Wir unterstützen dich gerne dabei.
             </p>
             <a href="#">KOSTENLOSE PROBESTUNDE</a>
           </div>

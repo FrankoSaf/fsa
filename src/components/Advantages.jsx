@@ -13,17 +13,15 @@ const Advantages = () => {
       </div>
       <div className="advantages">
         <div className="advantages_list-cont">
-          Musikunterricht in Neuss und Düsseldorf Du möchtest ein Instrument
-          lernen? Wir unterstützen dich gerne dabei. Wir bieten dir den
-          Freiraum, in dem du sowohl durch Einzel- als auch Gruppenunterricht
-          die Möglichkeit hast, deine Musikalität, dein Talent und alles, was
-          zur Verwirklichung deiner musikalischen Ziele gehört, zu entwickeln.
-          Dabei spielt es keine Rolle, ob du erst neu anfängst oder schon
-          Erfahrung mitbringst. Durch das Spielen und Singen bestimmter Stücke
-          und Songs erlangen unsere Schüler das nötige Wissen über
-          unterschiedliche Musikstile und lernen diese in der Praxis kennen.
-          Hauptziel ist dabei immer, unsere Schüler so zu motivieren, sodass sie
-          ihr inneres Gespür für Musik entwickeln und ohne Angst ihre
+          Wir bieten dir den Freiraum, in dem du sowohl durch Einzel- als auch
+          Gruppenunterricht die Möglichkeit hast, deine Musikalität, dein Talent
+          und alles, was zur Verwirklichung deiner musikalischen Ziele gehört,
+          zu entwickeln. Dabei spielt es keine Rolle, ob du erst neu anfängst
+          oder schon Erfahrung mitbringst. Durch das Spielen und Singen
+          bestimmter Stücke und Songs erlangen unsere Schüler das nötige Wissen
+          über unterschiedliche Musikstile und lernen diese in der Praxis
+          kennen. Hauptziel ist dabei immer, unsere Schüler so zu motivieren,
+          sodass sie ihr inneres Gespür für Musik entwickeln und ohne Angst ihre
           Fähigkeiten austesten können. Weil du keine Nummer für uns bist, gibt
           es bei uns keinen starren Lehrplan. Wir gehen auf dich ein und
           schneiden den Unterricht gezielt auf dich und deine individuellen

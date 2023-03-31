@@ -3,7 +3,7 @@ import logo from "../assets/images/Logo.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
 import musicianBanner from "../assets/otherimages/IMG_6805.jpeg";
 import "../UI/Title.css";
-import "../UI/Advantages.css";
+
 const Title = () => {
   return (
     <section className="intro">

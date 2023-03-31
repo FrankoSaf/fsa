@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { reviewers } from "../../assets/reviewers";
 import { AiFillStar } from "react-icons/ai";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
@@ -11,7 +11,38 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import "./Reviewers.css";
 import EKG from "../../assets/EKG.png";
 const Reviewers = () => {
-  const middleIndex = Math.floor(reviewers.length / 2); // calculate index of middle element
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  const middleIndex = Math.floor(reviewers.length / 2);
+
+  useEffect(() => {
+    // detect screen width
+    const screenWidth = window.innerWidth;
+
+    // set slidesPerView based on screen width
+    if (screenWidth >= 768) {
+      setSlidesPerView(3);
+    } else {
+      setSlidesPerView(1);
+    }
+
+    // add event listener for screen resize
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      // remove event listener on unmount
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const handleResize = () => {
+    // detect screen width on resize and set slidesPerView accordingly
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth >= 768) {
+      setSlidesPerView(3);
+    } else {
+      setSlidesPerView(1);
+    }
+  };
   return (
     <section className="reviewers-section">
       <div class="title_deco">
@@ -25,7 +56,7 @@ const Reviewers = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,

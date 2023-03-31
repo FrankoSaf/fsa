@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10rem;
+  width: 100%;
 }
 .teachers_container {
   display: flex;
@@ -38,4 +39,16 @@
 }
 .teacher_image:hover + .teacher_text {
   visibility: visible;
+}
+@media (max-width: 768px) {
+  .teachers_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: red;
+  }
+  .teacher {
+    height: 100%;
+  }
 }

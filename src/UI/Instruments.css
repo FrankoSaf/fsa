@@ -1,33 +1,50 @@
-.title_deco {
-  display: flex;
-  align-items: center;
+.instruments_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  justify-items: center;
 }
 
-.instruments_list {
-  display: flex;
-  width: 80%;
-  height: 100%;
-  align-items: center;
-  margin: 0 auto;
-  justify-content: space-around;
-}
 .instrument_cont {
-  width: calc(100% / 5);
   flex-direction: column;
   cursor: pointer;
+  height: 100%;
   align-items: center;
   text-align: center;
-  flex: 1;
-  display: flex;
+  font-size: 1.5rem;
 }
+
 .instrument_cont img {
-  height: 100%;
+  height: 15rem;
   width: 15rem;
 }
+
 .instruments_container {
   background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
-  height: 40vh;
+  min-height: 40vh;
 }
+
 .instrument_about {
   margin-top: 2rem;
+}
+
+.instrument_about p {
+  width: 25ch;
+}
+
+/* For devices with a width of 768px or less */
+@media only screen and (max-width: 768px) {
+  .instruments_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For devices with a width of 576px or less */
+@media only screen and (max-width: 576px) {
+  .instruments_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

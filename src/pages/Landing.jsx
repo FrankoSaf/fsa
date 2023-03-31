@@ -27,7 +27,7 @@ const Landing = () => {
     lng: 6.779174357670855,
   };
   return (
-    <>
+    <main style={{ width: "100%" }}>
       <Title />
       <Instruments />
       <Advantages />
@@ -35,7 +35,7 @@ const Landing = () => {
       <Prices />
       <Reviewers />
       <Map location={location1} setLocation={setLocation} />
-    </>
+    </main>
   );
 };
 

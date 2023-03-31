@@ -2,6 +2,7 @@ import React from "react";
 import { instrumentsList } from "../assets/instrumentList";
 import EKG from "../assets/EKG.png";
 import "../UI/Instruments.css";
+
 const Instruments = () => {
   return (
     <section>
@@ -14,14 +15,12 @@ const Instruments = () => {
       <div className="instruments_container">
         <div className="instruments_list">
           {instrumentsList.map((instrument, index) => (
-            <>
-              <div className="instrument_cont">
-                <img src={instrument.image} alt={instrument.inName} />
-                <div className="instrument_about">
-                  <p className="instrument_text">{instrument.text}</p>
-                </div>
+            <div key={index} className="instrument_cont">
+              <img src={instrument.image} alt={instrument.inName} />
+              <div className="instrument_about">
+                <p className="instrument_text">{instrument.text}</p>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>

@@ -15,11 +15,8 @@
 .intro_image img {
   width: 100%;
   height: 100%;
-}
-h1 {
-  font-size: 4.6rem;
-
-  position: relative;
+  object-fit: cover;
+  object-position: right;
 }
 .intro_text-container {
   display: flex;
@@ -49,14 +46,13 @@ h1 {
   justify-content: center;
 }
 .intro_logo img {
-  width: 50rem;
+  width: 100%;
   height: 100%;
 }
 .intro_infos {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 0rem;
 }
 .intro_titles {
   flex: 0.3;
@@ -82,7 +78,7 @@ h1 {
 .intro_social {
   height: 5rem;
 
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .intro_social a {
@@ -93,4 +89,151 @@ h1 {
 .intro_social a svg {
   width: 100%;
   height: 100%;
+}
+.image_shadows {
+  display: block;
+  background-color: rgb(54, 54, 54);
+  position: absolute;
+}
+.left_shadow {
+  left: 0;
+  height: 100%;
+  width: 0.1rem;
+  box-shadow: 10px 0px 5px rgb(54, 54, 54), 15px 0px 5px rgb(54, 54, 54);
+}
+.top_shadow {
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0px -5px 0px rgb(54, 54, 54), 0px 5px 5px rgb(54, 54, 54),
+    0px -10px 10px rgb(54, 54, 54);
+}
+.bottom_shadow {
+  top: calc(100% - 3rem);
+  left: 0;
+  right: 0;
+  height: 3rem;
+  box-shadow: 0px -5px 20px 10px rgb(54, 54, 54),
+    0px -10px 20px 10px rgb(54, 54, 54), 0px -15px 20px 10px rgb(54, 54, 54);
+}
+@media only screen and(max-width: 768px) {
+  .intro {
+    display: block;
+    height: 100vh;
+    background-color: red;
+    width: 100%;
+  }
+
+  .intro_image {
+    width: 50%;
+    visibility: hidden;
+    height: 80vh;
+    align-self: center;
+    position: relative;
+  }
+  .intro_image img {
+    width: 100%;
+    display: none !important;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+  .intro_text-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .info_text {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-width: 10px !important;
+    border-style: solid;
+
+    border-right: none;
+    border-image: linear-gradient(to right, #c2a560, #c2a560, rgb(51, 51, 51)) 1;
+  }
+
+  .intro_logo {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .intro_logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .intro_infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .intro_titles {
+    flex: 0.3;
+    position: relative;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .intro p {
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+  .intro_titles a {
+    background: linear-gradient(to right, #b18d4d, #d1b970, #e5d588);
+    width: 20rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+  .intro_social {
+    height: 5rem;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+  .intro_social a {
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+  }
+  .intro_social a svg {
+    width: 100%;
+    height: 100%;
+  }
+  .image_shadows {
+    display: block;
+    background-color: rgb(54, 54, 54);
+    position: absolute;
+  }
+  .left_shadow {
+    left: 0;
+    height: 100%;
+    width: 0.1rem;
+    box-shadow: 10px 0px 5px rgb(54, 54, 54), 15px 0px 5px rgb(54, 54, 54);
+  }
+  .top_shadow {
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0px -5px 0px rgb(54, 54, 54), 0px 5px 5px rgb(54, 54, 54),
+      0px -10px 10px rgb(54, 54, 54);
+  }
+  .bottom_shadow {
+    top: calc(100% - 3rem);
+    left: 0;
+    right: 0;
+    height: 3rem;
+    box-shadow: 0px -5px 20px 10px rgb(54, 54, 54),
+      0px -10px 20px 10px rgb(54, 54, 54), 0px -15px 20px 10px rgb(54, 54, 54);
+  }
 }

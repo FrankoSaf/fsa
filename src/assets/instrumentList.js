@@ -1,8 +1,8 @@
 import bass from "../assets/images/Bassgitarre.png";
 import gitarre from "../assets/images/Gitarre.png";
-import klavier from "../assets/images/Klavier.png";
+import klavier from "../assets/images/Piano2.png";
 import drums from "../assets/images/Schlagzeug.png";
-import gesang from "../assets/images/Gesang.png";
+import gesang from "../assets/images/Gesang2.png";
 
 export const instrumentsList = [
   {

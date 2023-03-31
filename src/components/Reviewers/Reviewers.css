@@ -4,10 +4,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .swiper-slide {
-  width: 37rem;
+  width: 95%;
   height: 40rem;
   position: relative;
   background-color: rgb(241, 241, 241);
@@ -34,29 +36,15 @@ h5 {
 }
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: 60rem;
+    align-items: center;
+    overflow: hidden;
   }
+
   .swiper-slide {
-    width: 28rem !important;
-    height: 36rem !important;
+   
+    min-height: 50rem !important;
   }
-  .swiper-slide img {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
-}
-
-.swiper-slide img {
-  width: 37rem;
-  height: 42rem;
-  border-radius: 2rem;
-  object-fit: cover;
-}
-
-.swiper-pagination {
-  position: relative;
-  width: 15rem !important;
-  bottom: 1rem;
 }
 
 .swiper-slide.swiper-slide-active,
@@ -66,8 +54,6 @@ h5 {
 }
 .slider-controller {
   width: 100%;
-
-  width: 30%;
   margin: 0 auto;
   height: 10rem;
   display: flex;

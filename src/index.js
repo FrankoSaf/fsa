@@ -4,11 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import { CloudinaryContext } from "cloudinary-react";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  <Router>
-    <App />
-  </Router>
+  <CloudinaryContext
+    cloudName={process.env.REACT_APP_CLOUD_NAME}
+    apiKey={process.env.REACT_APP_CLOUD_KEY}
+    apiSecret={process.env.REACT_APP_CLOUD_SECRET}
+  >
+    <Router>
+      <App />
+    </Router>
+  </CloudinaryContext>
 );
 
 // If you want to start measuring performance in your app, pass a function

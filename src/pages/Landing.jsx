@@ -1,12 +1,8 @@
 import React from "react";
 import "./Landing.css";
 import { useState, useEffect } from "react";
-
 import Map from "../components/Map/Map";
-
-import useLocalStorage from "use-local-storage";
 import Modal from "./Modal";
-
 import Title from "../components/Title";
 import Instruments from "../components/Instruments";
 import Advantages from "../components/Advantages";
@@ -15,7 +11,7 @@ import Prices from "../components/Prices";
 import Reviewers from "../components/Reviewers/Reviewers";
 import Footer from "../components/Footer";
 const Landing = () => {
-  const [location, setLocation] = useLocalStorage("");
+
 
   const location1 = {
     center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
@@ -36,7 +32,7 @@ const Landing = () => {
         <Teachers />
         <Prices />
         <Reviewers />
-        <Map location={location1} setLocation={setLocation} />
+        <Map location={location1}/>
       </main>
       <Footer />
     </>

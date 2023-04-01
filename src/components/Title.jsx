@@ -56,20 +56,20 @@ const Title = () => {
               Musikunterricht in Neuss und Düsseldorf. Du möchtest ein
               Instrument lernen? Wir unterstützen dich gerne dabei.
             </p>
-            <a href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/">
+            <a href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/" aria-label='Buchen Sie jetzt Ihre kostenlose Probestunde'>
               KOSTENLOSE PROBESTUNDE
             </a>
           </div>
           <div className="intro_social">
-            <a href="#" className="social_links">
+            <a href="#" className="social_links" aria-label="Instagram Link">
               <IoLogoInstagram />
             </a>
-            <a href="#" className="social_links">
+            <a href="#" className="social_links" aria-label="Facebook Link">
               <IoLogoFacebook />
             </a>
             <a
               href="https://www.youtube.com/@modernmusicschoolneuss2615"
-              className="social_links"
+              className="social_links" aria-label="Youtube Link"
             >
               <IoLogoYoutube />
             </a>
@@ -82,7 +82,7 @@ const Title = () => {
         <span className="image_shadows bottom_shadow"></span>
         <CSSTransition key={currentImageIndex} timeout={2000} classNames="fade">
           <Image
-            alt=""
+            alt="Banner Images"
             style={{
               height: "100%",
               width: "100%",

@@ -1,12 +1,12 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import "./map.css";
-import { ImLocation2 } from "react-icons/im";
+
 import MapSquare from "./MapSquare";
 import { mapStyles } from "../../assets/map";
 
 import EKG from "../../assets/EKG.png";
-import { Image } from "cloudinary-react";
+
 const Map = ({ location, zoomLevel }) => {
   console.log(location);
   return (
@@ -48,7 +48,7 @@ const LocationPin = ({ text }) => (
   >
     <img
       src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680344909/MapMarkerFSA_glucbx.png"
-      alt=""
+      alt="Map marker"
       class="marker"
       style={{ height: "100%;" }}
     />

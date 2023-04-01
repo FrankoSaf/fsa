@@ -10,7 +10,7 @@ const MapSquare = () => {
           <div className="contact-image">
             <img
               src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/Adresse_eewpng.png"
-              alt=""
+              alt="Adresse icon"
             />
           </div>
           <div className="contact-text">
@@ -23,7 +23,7 @@ const MapSquare = () => {
           <div className="contact-image">
             <img
               src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/Nummer_tnfkjk.png"
-              alt=""
+              alt="Phone icon"
             />
           </div>
           <div className="contact-text">
@@ -35,7 +35,7 @@ const MapSquare = () => {
           <div className="contact-image">
             <img
               src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/EMail_ag2jer.png"
-              alt=""
+              alt="Email icon"
             />
           </div>
           <div className="contact-text">
@@ -51,6 +51,7 @@ const MapSquare = () => {
           <a
             href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/"
             class="formular"
+            aria-label="Kontaktformular link"
           >
             ZUM KONTAKTFORMULAR
           </a>
@@ -58,6 +59,7 @@ const MapSquare = () => {
           <a
             className="whatsapp"
             href="https://api.whatsapp.com/send?phone=4917664209354"
+            aria-label="Whatsapp"
           >
             <div>
               <BsWhatsapp />

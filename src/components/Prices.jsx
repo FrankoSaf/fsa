@@ -1,6 +1,7 @@
 import React from "react";
 import EKG from "../assets/EKG.png";
 import { prices } from "../assets/prices";
+import { BsCheckCircleFill } from "react-icons/bs";
 import "../UI/Prices.css";
 const Prices = () => {
   return (
@@ -21,11 +22,15 @@ const Prices = () => {
                   background: `linear-gradient(to right,rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.397),rgba(0, 0, 0, 0.171)),url(${price.image}) no-repeat center/cover`,
                 }}
               >
-                <h4 className="price-name">{price.name}</h4>
+                <h4 className="price-name">
+                  <span>{price.name.split(" ")[0]}</span>{" "}<br/>
+                  {price.name.split(" ")[1]}{" "}{price.name.split(" ")[2]}
+                </h4>
                 <p className="price-desc">{price.description}</p>
                 <ul className="price-details">
                   {price.list.map((item) => (
                     <li>
+                      <BsCheckCircleFill />
                       <p className="price-details-sub">{item}</p>
                     </li>
                   ))}

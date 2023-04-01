@@ -14,12 +14,14 @@
   flex-direction: column;
   cursor: pointer;
   height: 100%;
-  justify-content: center; /* add this line */
+
   align-items: center; /* add this line */
   text-align: center;
   font-size: 1.5rem;
 }
-
+.instrument_cont:nth-of-type(4) img{
+  transform:rotate(-7deg)
+}
 .instrument_cont img {
   height: 15rem;
   width: 15rem;
@@ -27,11 +29,12 @@
 
 .instruments_container {
   background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
-  height: 40vh;
+  min-height: 60vh;
 }
 
 .instrument_about {
   margin-top: 2rem;
+  font-family:'Dosis',sans-serif;
 }
 
 .instrument_about p {

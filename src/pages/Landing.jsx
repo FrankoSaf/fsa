@@ -10,9 +10,8 @@ import Teachers from "../components/Teachers";
 import Prices from "../components/Prices";
 import Reviewers from "../components/Reviewers/Reviewers";
 import Footer from "../components/Footer";
+import Probe from "../components/Probe";
 const Landing = () => {
-
-
   const location1 = {
     center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
     lat: 51.200934234153095,
@@ -30,9 +29,10 @@ const Landing = () => {
         <Instruments />
         <Advantages />
         <Teachers />
+        <Probe />
         <Prices />
-        <Reviewers />
-        <Map location={location1}/>
+        {/* <Reviewers /> */}
+        <Map location={location1} />
       </main>
       <Footer />
     </>

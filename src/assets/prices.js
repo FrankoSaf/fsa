@@ -4,8 +4,8 @@ import bg3 from "../assets/otherimages/right.JPG";
 
 export const prices = [
   {
-    name: "Tarif SOLO",
-    description: "Einzelunterrict: voller Fokus auf dich und dein Instrument",
+    name: "Tarif Solo 30",
+    description: "Einzelunterricht - voller Fokus auf dich und dein Instrument",
     list: [
       "30 min",
       "ab 85€/Monat",
@@ -15,8 +15,8 @@ export const prices = [
     image: bg1,
   },
   {
-    name: "Tarif SOLO 45",
-    description: "Einzelunterrict: voller Fokus auf dich und dein Instrument",
+    name: "Tarif Solo 45",
+    description: "Einzelunterricht - voller Fokus auf dich und dein Instrument",
     list: [
       "45 min",
       "ab 128€/Monat",
@@ -26,8 +26,8 @@ export const prices = [
     image: bg2,
   },
   {
-    name: "Tarif GRUPPE",
-    description: "Einzelunterrict: voller Fokus auf dich und dein Instrument",
+    name: "Tarif Gruppe",
+    description: "Gruppenunterricht - mehr Spaß und Freude am gemeinsamen Musik machen",
     list: [
       "45 min",
       "79€/Monat",

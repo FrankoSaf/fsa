@@ -17,21 +17,35 @@
   flex-wrap: wrap;
   width: 32rem;
 }
-
+.price-card h4 span {
+  font-family: "Roboto Condensed", sans-serif !important;
+  text-transform: uppercase;
+  color:white;
+  margin-bottom:1.5rem;
+  font-size:3rem;
+}
 .price-card h4 {
-  font-size: 3rem;
+  color: #c2a560;
+  font-family: "Maytra";
+  font-size: 4rem;
 }
 
 .price-desc {
   font-size: 1.5rem;
-  font-style: italic;
   margin-bottom: 2rem;
 }
 
 .price-details li {
   margin-bottom: 2rem;
-}
 
+  display: flex;
+}
+.price-details li p {
+  margin-left: 1rem;
+}
+.price-details li svg {
+  color: #c2a560;
+}
 .price_list {
   max-width: 1200px;
   margin: 0 auto;

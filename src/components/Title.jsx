@@ -31,7 +31,7 @@ const Title = () => {
   useEffect(() => {
     const interval = setInterval(changeImage, 2000);
     return () => clearInterval(interval);
-  }, [currentImageIndex]);
+  }, [currentImageIndex, changeImage]);
   return (
     <section className="intro">
       <div className="intro_text-container">
@@ -56,7 +56,10 @@ const Title = () => {
               Musikunterricht in Neuss und Düsseldorf. Du möchtest ein
               Instrument lernen? Wir unterstützen dich gerne dabei.
             </p>
-            <a href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/" aria-label='Buchen Sie jetzt Ihre kostenlose Probestunde'>
+            <a
+              href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/"
+              aria-label="Buchen Sie jetzt Ihre kostenlose Probestunde"
+            >
               KOSTENLOSE PROBESTUNDE
             </a>
           </div>
@@ -69,7 +72,8 @@ const Title = () => {
             </a>
             <a
               href="https://www.youtube.com/@modernmusicschoolneuss2615"
-              className="social_links" aria-label="Youtube Link"
+              className="social_links"
+              aria-label="Youtube Link"
             >
               <IoLogoYoutube />
             </a>
@@ -80,7 +84,14 @@ const Title = () => {
         <span className="image_shadows top_shadow"></span>
         <span className="image_shadows left_shadow"></span>
         <span className="image_shadows bottom_shadow"></span>
-        <CSSTransition key={currentImageIndex} timeout={2000} classNames="fade">
+        <div className="image_shadows right_shadow"></div>
+        <CSSTransition
+          key={currentImageIndex}
+          timeout={2000}
+          classNames="fade"
+          in={true}
+          appear={true}
+        >
           <Image
             alt="Banner Images"
             style={{

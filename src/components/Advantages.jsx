@@ -2,6 +2,8 @@ import React from "react";
 import EKG from "../assets/EKG.png";
 import "../UI/Advantages.css";
 import Micro from "../assets/otherimages/IMG_6823.jpeg";
+import 'animate.css';
+
 const Advantages = () => {
   return (
     <section>
@@ -9,9 +11,9 @@ const Advantages = () => {
         <div className="deco_cont">
           <img src={EKG} alt="title decoration" />
         </div>
-        <h2>UBER UNS</h2>
+        <h2>ÜBER UNS</h2>
       </div>
-      <div className="advantages">
+      <div className="advantages fadeIn">
         <div className="advantages_list-cont">
           Wir bieten dir den Freiraum, in dem du sowohl durch Einzel- als auch
           Gruppenunterricht die Möglichkeit hast, deine Musikalität, dein Talent
@@ -27,8 +29,8 @@ const Advantages = () => {
           schneiden den Unterricht gezielt auf dich und deine individuellen
           Bedürfnisse und Interessen zu. Dabei erkennen wir Schwachstellen und
           Stärken und arbeiten gemeinsam mit dir daran. Falls dir also in erster
-          Linie ein tolles Endergebnis und natürlich auch Spaß wichtig sind,
-          bist du bei uns an der richtigen Adresse!
+          Linie ein tolles Ergebnis und natürlich auch Spaß wichtig sind,
+          bist du bei uns genau richtig!
         </div>
       </div>
     </section>

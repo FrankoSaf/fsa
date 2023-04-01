@@ -41,7 +41,10 @@ const MapSquare = () => {
       </div>
       <div className="information">
         <div className="contact_whatsapp">
-          <a href="" class="formular">
+          <a
+            href="https://www.axinio.app/booking/forms/trial/fc60f65c-2a6f-49dd-8809-c41246cca534/"
+            class="formular"
+          >
             ZUM KONTAKTFORMULAR
           </a>
 

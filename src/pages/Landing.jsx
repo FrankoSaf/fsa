@@ -13,6 +13,7 @@ import Advantages from "../components/Advantages";
 import Teachers from "../components/Teachers";
 import Prices from "../components/Prices";
 import Reviewers from "../components/Reviewers/Reviewers";
+import Footer from "../components/Footer";
 const Landing = () => {
   const [location, setLocation] = useLocalStorage("");
 
@@ -27,15 +28,18 @@ const Landing = () => {
     lng: 6.779174357670855,
   };
   return (
-    <main style={{ width: "100%" }}>
-      <Title />
-      <Instruments />
-      <Advantages />
-      <Teachers />
-      <Prices />
-      <Reviewers />
-      <Map location={location1} setLocation={setLocation} />
-    </main>
+    <>
+      <main style={{ width: "100%" }}>
+        <Title />
+        <Instruments />
+        <Advantages />
+        <Teachers />
+        <Prices />
+        <Reviewers />
+        <Map location={location1} setLocation={setLocation} />
+      </main>
+      <Footer />
+    </>
   );
 };
 

@@ -62,10 +62,10 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     transform: translateY(-25%);
     position: absolute;
-    left: 15rem;
+    left: 10rem;
   }
   .deco_cont {
     width: 25rem;

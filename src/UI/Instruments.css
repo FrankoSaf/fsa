@@ -6,13 +6,16 @@
   height: 100%;
   margin: 0 auto;
   justify-items: center;
+  align-content: center; /* add this line */
 }
 
 .instrument_cont {
+  display: flex; /* add this line */
   flex-direction: column;
   cursor: pointer;
   height: 100%;
-  align-items: center;
+  justify-content: center; /* add this line */
+  align-items: center; /* add this line */
   text-align: center;
   font-size: 1.5rem;
 }
@@ -24,7 +27,7 @@
 
 .instruments_container {
   background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
-  min-height: 40vh;
+  height: 40vh;
 }
 
 .instrument_about {
@@ -36,15 +39,21 @@
 }
 
 /* For devices with a width of 768px or less */
-@media only screen and (max-width: 768px) {
+@media (max-width: 968px) {
   .instruments_list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .instruments_container {
+    min-height: 100vh;
   }
 }
 
 /* For devices with a width of 576px or less */
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .instruments_list {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .instruments_container {
+    min-height: 150vh;
   }
 }

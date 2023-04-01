@@ -1,0 +1,14 @@
+.footer_container {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  height: 8rem;
+}
+footer a:not(:last-of-type) {
+  margin-right: 2rem;
+}

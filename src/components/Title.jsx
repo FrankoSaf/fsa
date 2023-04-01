@@ -38,7 +38,19 @@ const Title = () => {
         <div className="info_text">
           <div className="intro_infos">
             <div className="intro_logo">
-              <Image src="https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344909/Logo_fppvkk.png" alt="School badge" />
+              <Image
+                publicId="https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344909/Logo_fppvkk.png"
+                alt="School badge"
+                width="auto"
+                responsive
+                sizes="(max-width: 1280px) 50vw, 640px"
+                breakpoints={{
+                  300: [256, 232],
+                  660: [660, 599],
+                  1040: [1040, 943],
+                  1320: [1320, 1197],
+                }}
+              />
             </div>
           </div>
           <div className="intro_titles">

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 @font-face {
   font-family: "Maytra";
   src: url("./assets/fonts/Maytra-7BMEP.ttf") format("truetype"),
@@ -47,6 +47,9 @@ h2 {
   transform: translateY(-25%);
   position: absolute;
   left: 40rem;
+}
+main {
+  height: 100%;
 }
 .deco_cont {
   width: 50rem;

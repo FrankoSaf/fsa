@@ -36,7 +36,7 @@ const Map = ({ location, zoomLevel }) => {
             />
           </GoogleMapReact>
         </div>
-        <MapSquare />
+        <MapSquare location={location} />
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 
 import "./map.css";
-const MapSquare = () => {
+const MapSquare = ({ location }) => {
   return (
     <div className="contact_square">
       <div className="contact_details">
@@ -15,8 +15,17 @@ const MapSquare = () => {
           </div>
           <div className="contact-text">
             <h5 className="contact-title">Adresse:</h5>
-            <p>Neumarkt 18</p>
-            <p>41460 Neuss</p>
+            {location === "neuss" ? (
+              <>
+                <p>Neumarkt 18</p>
+                <p>41460 Neuss</p>
+              </>
+            ) : (
+              <>
+                <p>Kaiserstraße 28</p>
+                <p>40479 Düsseldorf</p>
+              </>
+            )}
           </div>
         </div>
         <div className="contact_details-sub">
@@ -28,7 +37,11 @@ const MapSquare = () => {
           </div>
           <div className="contact-text">
             <h5 className="contact-title">Mobil:</h5>
-            <a href="phone:+4915141273622">015141273622</a>
+            {location === "neuss" ? (
+              <a href="phone:+4915141273622">015141273622</a>
+            ) : (
+              <a href="phone:+4917677154511">017677154511</a>
+            )}
           </div>
         </div>
         <div className="contact_details-sub">

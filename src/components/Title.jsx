@@ -40,7 +40,7 @@ const Title = () => {
             <div className="intro_logo">
               <img
                 src="https://res.cloudinary.com/dnp7nm4iy/image/upload/q_auto,f_auto/v1680344909/Logo_fppvkk.png"
-                srcset="
+                srcSet="
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_256,q_auto,f_auto/v1680344909/Logo_fppvkk.png 256w,
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_660,q_auto,f_auto/v1680344909/Logo_fppvkk.png 660w,
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_1040,q_auto,f_auto/v1680344909/Logo_fppvkk.png 1040w,

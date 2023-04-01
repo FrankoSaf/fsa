@@ -58,7 +58,7 @@
   flex: 0.3;
   position: relative;
   align-items: center;
-
+  font-family: "Dosin", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -115,12 +115,12 @@
     0px -10px 10px rgb(54, 54, 54);
 }
 .bottom_shadow {
-  bottom:0;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 1rem;
-  box-shadow: 0px 20px 0px rgb(54, 54, 54),
-    0px -5px 5px  rgb(54, 54, 54), 0px -10px 10px  rgb(54, 54, 54);
+  box-shadow: 0px 20px 0px rgb(54, 54, 54), 0px -5px 5px rgb(54, 54, 54),
+    0px -10px 10px rgb(54, 54, 54);
 }
 .fade-enter {
   opacity: 0;
@@ -189,6 +189,9 @@
     top: 40px;
     right: 20px;
     width: fit-content;
+  }
+  .image_shadows {
+    display: none;
   }
 }
 @media (min-width: 2030px) {

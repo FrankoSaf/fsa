@@ -1,5 +1,6 @@
 import React from "react";
 import "./Landing.css";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Map from "../components/Map/Map";
 import Modal from "./Modal";
@@ -12,16 +13,31 @@ import Reviewers from "../components/Reviewers/Reviewers";
 import Footer from "../components/Footer";
 import Probe from "../components/Probe";
 const Landing = () => {
-  const location1 = {
-    center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
-    lat: 51.200934234153095,
-    lng: 6.6902485237841995,
-  };
-  const location2 = {
-    center: { lat: 51.23399538994627, lng: 6.779174357670855 },
-    lat: 51.23399538994627,
-    lng: 6.779174357670855,
-  };
+  const { location } = useParams();
+  let map;
+  if (location) {
+    map =
+      location.toLowerCase() === "neuss"
+        ? {
+            center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
+            lat: 51.200934234153095,
+            lng: 6.6902485237841995,
+          }
+        : location.toLowerCase() === "düsseldorf"
+        ? {
+            center: { lat: 51.23399538994627, lng: 6.779174357670855 },
+            lat: 51.23399538994627,
+            lng: 6.779174357670855,
+          }
+        : null;
+  } else {
+    map = {
+      center: { lat: 51.23399538994627, lng: 6.779174357670855 },
+      lat: 51.23399538994627,
+      lng: 6.779174357670855,
+    };
+  }
+
   return (
     <>
       <main style={{ width: "100%" }}>
@@ -32,7 +48,7 @@ const Landing = () => {
         <Probe />
         <Prices />
         {/* <Reviewers /> */}
-        <Map location={location1} />
+        <Map location={map} />
       </main>
       <Footer />
     </>

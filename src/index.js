@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <CloudinaryContext
-    cloudName="193296596711623"
-    apiKey="dnp7nm4iy"
-    apiSecret="c6JQQZikimwjFEo7AyFhnzpKiB8"
+    cloudName={process.env.REACT_APP_CLOUD_NAME}
+    apiKey={process.env.REACT_APP_CLOUD_KEY}
+    apiSecret={process.env.REACT_APP_CLOUD_SECRET}
   >
     <Router>
       <App />

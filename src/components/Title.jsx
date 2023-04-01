@@ -38,18 +38,16 @@ const Title = () => {
         <div className="info_text">
           <div className="intro_infos">
             <div className="intro_logo">
-              <Image
-                publicId="https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344909/Logo_fppvkk.png"
-                alt="School badge"
-                width="auto"
-                responsive
-                sizes="(max-width: 1280px) 50vw, 640px"
-                breakpoints={{
-                  300: [256, 232],
-                  660: [660, 599],
-                  1040: [1040, 943],
-                  1320: [1320, 1197],
-                }}
+              <img
+                src="https://res.cloudinary.com/dnp7nm4iy/image/upload/q_auto,f_auto/v1680344909/Logo_fppvkk.png"
+                srcset="
+        https://res.cloudinary.com/dnp7nm4iy/image/upload/w_256,q_auto,f_auto/v1680344909/Logo_fppvkk.png 256w,
+        https://res.cloudinary.com/dnp7nm4iy/image/upload/w_660,q_auto,f_auto/v1680344909/Logo_fppvkk.png 660w,
+        https://res.cloudinary.com/dnp7nm4iy/image/upload/w_1040,q_auto,f_auto/v1680344909/Logo_fppvkk.png 1040w,
+        https://res.cloudinary.com/dnp7nm4iy/image/upload/w_1320,q_auto,f_auto/v1680344909/Logo_fppvkk.png 1320w
+    "
+                sizes="(min-width: 2040px) 22.08vw, (min-width: 940px) 31.48vw, 70vw"
+                alt="Fine sound academy logo"
               />
             </div>
           </div>

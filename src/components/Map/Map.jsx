@@ -4,8 +4,9 @@ import "./map.css";
 import { ImLocation2 } from "react-icons/im";
 import MapSquare from "./MapSquare";
 import { mapStyles } from "../../assets/map";
-import mapMarker from "../../assets/images/MapMarkerFSA.png";
+
 import EKG from "../../assets/EKG.png";
+import { Image } from "cloudinary-react";
 const Map = ({ location, zoomLevel }) => {
   console.log(location);
   return (
@@ -45,7 +46,12 @@ const LocationPin = ({ text }) => (
     className="pin"
     style={{ position: "absolute", transform: "translate(-50%,-50%)" }}
   >
-    <img src={mapMarker} alt="" className="marker" style={{ height: "100%" }} />
+    <img
+      src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680344909/MapMarkerFSA_glucbx.png"
+      alt=""
+      class="marker"
+      style={{ height: "100%;" }}
+    />
   </div>
 );
 export default Map;

@@ -1,8 +1,6 @@
 import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
-import Adresse from "../../assets/map/Adresse.png";
-import Email from "../../assets/map/EMail.png";
-import Number from "../../assets/map/Nummer.png";
+
 import "./map.css";
 const MapSquare = () => {
   return (
@@ -10,7 +8,10 @@ const MapSquare = () => {
       <div className="contact_details">
         <div className="contact_details-sub">
           <div className="contact-image">
-            <img src={Adresse} alt="" />
+            <img
+              src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/Adresse_eewpng.png"
+              alt=""
+            />
           </div>
           <div className="contact-text">
             <h5 className="contact-title">Adresse:</h5>
@@ -20,7 +21,10 @@ const MapSquare = () => {
         </div>
         <div className="contact_details-sub">
           <div className="contact-image">
-            <img src={Number} alt="" />
+            <img
+              src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/Nummer_tnfkjk.png"
+              alt=""
+            />
           </div>
           <div className="contact-text">
             <h5 className="contact-title">Mobil:</h5>
@@ -29,7 +33,10 @@ const MapSquare = () => {
         </div>
         <div className="contact_details-sub">
           <div className="contact-image">
-            <img src={Email} alt="" />
+            <img
+              src="https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_140/v1680351132/EMail_ag2jer.png"
+              alt=""
+            />
           </div>
           <div className="contact-text">
             <h5 className="contact-title">E-Mail:</h5>

@@ -1,3 +1,4 @@
+import { Image } from "cloudinary-react";
 import React from "react";
 import EKG from "../assets/EKG.png";
 import { teachers } from "../assets/teacher";
@@ -15,7 +16,7 @@ const Teachers = () => {
         {teachers.map((teacher, index) => (
           <div className="teacher">
             <div className="teacher_image">
-              <img
+              <Image
                 src={teacher.image}
                 alt=""
                 style={index === 3 ? { objectPosition: "top left" } : {}}

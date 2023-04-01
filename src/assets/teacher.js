@@ -1,26 +1,26 @@
-import Adrian from  "../assets/teachers/Adrian.jpeg"
-import Anastasija from "../assets/teachers/Anastasija.jpeg"
-import Felix from   "../assets/teachers/Felix.jpg"
-import Ruben from "../assets/teachers/Ruben.JPG"
 export const teachers = [
   {
     name: "Adrian",
     instrument: "Gitarre",
-    image: Adrian,
+    image:
+      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344939/Adrian_fhh3yk.jpg",
   },
   {
     name: "Anastasija",
     instrument: "Gesang",
-    image: Anastasija,
+    image:
+      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344939/Anastasija_jpvgre.jpg",
+  },
+  {
+    name: "Ruben",
+    instrument: "Gitarre",
+    image:
+      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680347957/Ruben_yjpiya.jpg",
   },
   {
     name: "Felix",
-    instrument: "Gitarre",
-    image:Felix,
-  },
-  {
-    name: "Rodrigo",
     instrument: "Schlagzeug",
-    image: Ruben,
+    image:
+      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680347957/Felix_vw2ogp.jpg",
   },
 ];

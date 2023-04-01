@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/Logo.png";
+
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
 
 import { Image } from "cloudinary-react";
@@ -38,7 +38,7 @@ const Title = () => {
         <div className="info_text">
           <div className="intro_infos">
             <div className="intro_logo">
-              <Image src={logo} alt="School badge" />
+              <Image src="https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344909/Logo_fppvkk.png" alt="School badge" />
             </div>
           </div>
           <div className="intro_titles">

@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer_container">
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/datenschutz">Datenschutz</NavLink>
         <NavLink to="/impressum">Impressum</NavLink>
         <a

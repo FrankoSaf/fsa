@@ -2,13 +2,16 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 60rem;
+  border: #ccb36a 5px solid;
   transform: translate(-50%, -50%);
+  height: 25rem;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-
 }
 .welcome h3 {
   font-size: 2.5rem;
@@ -23,7 +26,7 @@
 .location_option {
   color: white;
   font-size: 2rem;
-  background: #cfa528;
+  background: #ccb36a;
   width: 12rem;
   height: 4rem;
   margin-top: 1rem;
@@ -34,8 +37,21 @@
 .backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.932);
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   z-index: 999;
-
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 680px) {
+  .modal {
+    max-width: 40rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }

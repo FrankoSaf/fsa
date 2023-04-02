@@ -30,9 +30,9 @@ export const teachers = [
       "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680347957/Ruben_yjpiya.jpg",
   },
   {
-    name: "Ruben",
-    instrument: "Gitarre",
+    name: "Yannik",
+    instrument: "Schlagzeug",
     image:
-      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680347957/Ruben_yjpiya.jpg",
+      "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680383566/image_6487327_q4vyos.jpg",
   },
 ];

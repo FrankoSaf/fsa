@@ -11,16 +11,28 @@ const Welcome = ({ setLocation }) => {
           <div className="location">
             <NavLink
               className="location_option"
+              to="/düsseldorf"
               onClick={() => {
-                setLocation("Düsseldorf");
+                setLocation({
+                  name: "düsseldorf",
+                  center: { lat: 51.23399538994627, lng: 6.779174357670855 },
+                  lat: 51.23399538994627,
+                  lng: 6.779174357670855,
+                });
               }}
             >
               Düsseldorf
             </NavLink>
             <NavLink
               className="location_option"
+              to="/neuss"
               onClick={() => {
-                setLocation("Neuss");
+                setLocation({
+                  name: "neuss",
+                  center: { lat: 51.200934234153095, lng: 6.6902485237841995 },
+                  lat: 51.200934234153095,
+                  lng: 6.6902485237841995,
+                });
               }}
             >
               Neuss

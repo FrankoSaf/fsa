@@ -23,6 +23,8 @@
   flex: 1;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 30;
 }
 .info_text {
   width: 100%;
@@ -58,7 +60,7 @@
   flex: 0.3;
   position: relative;
   align-items: center;
-  font-family: "Dosin", sans-serif;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,6 +96,7 @@
   display: block;
   background-color: rgb(54, 54, 54);
   position: absolute;
+  z-index: 10;
 }
 .left_shadow {
   left: 0;
@@ -122,22 +125,43 @@
   box-shadow: 0px 20px 0px rgb(54, 54, 54), 0px -5px 5px rgb(54, 54, 54),
     0px -10px 10px rgb(54, 54, 54);
 }
-.fade-enter {
-  opacity: 0;
-}
 
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 2s ease-in;
+#cf4a img {
+  position: absolute;
+  left: 0;
+  animation: cf4FadeInOut 15s infinite ease-in-out;
 }
-
-.fade-exit {
-  opacity: 1;
+#cf4a img:nth-of-type(1) {
+  animation-delay: 12s;
 }
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 2s ease-in;
+#cf4a img:nth-of-type(2) {
+  animation-delay: 9s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 3s;
+}
+#cf4a img:nth-of-type(5) {
+  animation-delay: 0s;
+}
+@keyframes cf4FadeInOut {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 920px) {
   .intro {
@@ -164,6 +188,22 @@
     object-fit: cover;
     object-position: right;
   }
+  .grad_image {
+    width: 100%;
+    position: absolute;
+    height: 80vh;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+  }
   .intro_text-container {
     display: flex;
     flex: 1;
@@ -189,6 +229,9 @@
     top: 40px;
     right: 20px;
     width: fit-content;
+  }
+  #cf4a img {
+    animation: none;
   }
   .image_shadows {
     display: none;

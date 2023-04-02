@@ -1,37 +1,50 @@
 import React, { useEffect, useState } from "react";
-
 import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
-
 import { Image } from "cloudinary-react";
 import "../UI/Title.css";
-import { CSSTransition } from "react-transition-group";
-
+const firstBanner =
+  "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344932/IMG_6805_ucreeh.jpg";
+const secondBanner =
+  "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344931/IMG_6823_fs6htw.jpg";
+const thirdBanner =
+  "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6822_rczjkp.jpg";
+const fourthBanner =
+  "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6824_axnybo.jpg";
+const fifthBanner =
+  "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6827_z7c1t4.jpg";
 const Title = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const firstBanner =
-    "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344932/IMG_6805_ucreeh.jpg";
-  const secondBanner =
-    "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344931/IMG_6823_fs6htw.jpg";
-  const thirdBanner =
-    "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6822_rczjkp.jpg";
-  const fourthBanner =
-    "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6824_axnybo.jpg";
-  const fifthBanner =
-    "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6827_z7c1t4.jpg";
-  const images = [
+  const [images, setImages] = useState([
     firstBanner,
     secondBanner,
     thirdBanner,
     fourthBanner,
     fifthBanner,
-  ];
-  const changeImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % images.length);
-  };
+  ]);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
   useEffect(() => {
-    const interval = setInterval(changeImage, 2000);
-    return () => clearInterval(interval);
-  }, [currentImageIndex, changeImage]);
+    const handleResize = () => {
+      if (window.innerWidth < 921) {
+        setImages([fifthBanner]);
+        setIsSmallScreen(true);
+      } else {
+        setImages([
+          firstBanner,
+          secondBanner,
+          thirdBanner,
+          fourthBanner,
+          fifthBanner,
+        ]);
+        setIsSmallScreen(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <section className="intro">
       <div className="intro_text-container">
@@ -40,7 +53,7 @@ const Title = () => {
             <div className="intro_logo">
               <img
                 src="https://res.cloudinary.com/dnp7nm4iy/image/upload/q_auto,f_auto/v1680344909/Logo_fppvkk.png"
-                srcSet="
+                srcset="
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_256,q_auto,f_auto/v1680344909/Logo_fppvkk.png 256w,
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_660,q_auto,f_auto/v1680344909/Logo_fppvkk.png 660w,
         https://res.cloudinary.com/dnp7nm4iy/image/upload/w_1040,q_auto,f_auto/v1680344909/Logo_fppvkk.png 1040w,
@@ -80,76 +93,135 @@ const Title = () => {
           </div>
         </div>
       </div>
-      <div className="intro_image">
-        <span className="image_shadows top_shadow"></span>
-        <span className="image_shadows left_shadow"></span>
-        <span className="image_shadows bottom_shadow"></span>
-        <div className="image_shadows right_shadow"></div>
-        <CSSTransition
-          key={currentImageIndex}
-          timeout={2000}
-          classNames="fade"
-          in={true}
-          appear={true}
-        >
-          <Image
-            alt="Banner Images"
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center",
-            }}
-            crop="scale"
-            quality="auto"
-            responsive
-            publicId={images[currentImageIndex]}
-            breakpoints={[
-              {
-                width: 300,
-                transformation: {
+      <div class="intro_image" id="cf4a">
+        <span class="image_shadows top_shadow"></span>
+        <span class="image_shadows left_shadow"></span>
+        <span class="image_shadows bottom_shadow"></span>
+        {isSmallScreen ? (
+          <>
+            <div className="grad_image"></div>
+            <Image
+              alt="Banner Images"
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+              crop="scale"
+              quality="auto"
+              responsive
+              publicId={images[0]}
+              breakpoints={[
+                {
                   width: 300,
-                  crop: "fill",
+                  transformation: {
+                    width: 300,
+                    crop: "fill",
+                  },
                 },
-              },
-              {
-                width: 830,
-                transformation: {
+                {
                   width: 830,
-                  crop: "fill",
+                  transformation: {
+                    width: 830,
+                    crop: "fill",
+                  },
                 },
-              },
-              {
-                width: 1130,
-                transformation: {
+                {
                   width: 1130,
-                  crop: "fill",
+                  transformation: {
+                    width: 1130,
+                    crop: "fill",
+                  },
                 },
-              },
-              {
-                width: 1500,
-                transformation: {
+                {
                   width: 1500,
-                  crop: "fill",
+                  transformation: {
+                    width: 1500,
+                    crop: "fill",
+                  },
                 },
-              },
-              {
-                width: 1800,
-                transformation: {
+                {
                   width: 1800,
-                  crop: "fill",
+                  transformation: {
+                    width: 1800,
+                    crop: "fill",
+                  },
                 },
-              },
-              {
-                width: 2048,
-                transformation: {
+                {
                   width: 2048,
-                  crop: "fill",
+                  transformation: {
+                    width: 2048,
+                    crop: "fill",
+                  },
                 },
-              },
-            ]}
-          />
-        </CSSTransition>
+              ]}
+            />
+          </>
+        ) : (
+          images.map((image, index) => {
+            return (
+              <Image
+                alt="Banner Images"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+                crop="scale"
+                quality="auto"
+                responsive
+                publicId={image}
+                class={`image image-${index + 1}`}
+                breakpoints={[
+                  {
+                    width: 300,
+                    transformation: {
+                      width: 300,
+                      crop: "fill",
+                    },
+                  },
+                  {
+                    width: 830,
+                    transformation: {
+                      width: 830,
+                      crop: "fill",
+                    },
+                  },
+                  {
+                    width: 1130,
+                    transformation: {
+                      width: 1130,
+                      crop: "fill",
+                    },
+                  },
+                  {
+                    width: 1500,
+                    transformation: {
+                      width: 1500,
+                      crop: "fill",
+                    },
+                  },
+                  {
+                    width: 1800,
+                    transformation: {
+                      width: 1800,
+                      crop: "fill",
+                    },
+                  },
+                  {
+                    width: 2048,
+                    transformation: {
+                      width: 2048,
+                      crop: "fill",
+                    },
+                  },
+                ]}
+              />
+            );
+          })
+        )}
       </div>
     </section>
   );

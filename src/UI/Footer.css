@@ -12,3 +12,6 @@ footer {
 footer a:not(:last-of-type) {
   margin-right: 2rem;
 }
+footer a {
+  color: white;
+}

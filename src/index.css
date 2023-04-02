@@ -34,15 +34,17 @@ body {
     #313131
   ); */
 }
-
-.map-container {
+body.modal-open {
+  overflow: hidden;
+}
+main.map-container {
   height: 100%;
   width: 100%;
 }
-a {
+main a {
   color: white;
 }
-h2 {
+main h2 {
   font-size: 3.9rem;
   transform: translateY(-25%);
   position: absolute;
@@ -51,35 +53,35 @@ h2 {
 main {
   height: 100%;
 }
-.deco_cont {
+main .deco_cont {
   width: 50rem;
   height: 25rem;
 }
-.deco_cont img {
+main .deco_cont img {
   width: 100%;
   height: 100%;
 }
-.title_deco {
+main .title_deco {
   position: relative;
   display: flex;
   align-items: center;
 }
 @media (max-width: 768px) {
-  h2 {
+  main h2 {
     font-size: 2.2rem;
     transform: translateY(-25%);
     position: absolute;
     left: 10rem;
   }
-  .deco_cont {
+  main .deco_cont {
     width: 25rem;
     height: 15rem;
   }
-  .deco_cont img {
+  main .deco_cont img {
     width: 100%;
     height: 100%;
   }
-  .title_deco {
+  main .title_deco {
     position: relative;
   }
 }

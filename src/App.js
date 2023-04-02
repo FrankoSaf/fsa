@@ -7,41 +7,13 @@ import { Audio } from "react-loader-spinner";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    
-const handleLoad = () => {
-      setIsLoading(false);
-    };
-
-    document.addEventListener("DOMContentLoaded", handleLoad);
-
-    return () => {
-      document.removeEventListener("DOMContentLoaded", handleLoad);
-    };
-  }, []);
+  
   
   return (
     <>
-      <div style={{ display: isLoading ? "block" : "none" }}>
-        <Audio
-          height="80"
-          width="80"
-          radius="9"
-          color="#c2a560"
-          ariaLabel="loading"
-          wrapperStyle={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100vh",
-          }}
-          wrapperClassName="audio-wrapper"
-        />
-      </div>
+      
 
-      <div style={!isLoading ? { display: "block" } : { display: "none" }}>
+      
         <Routes>
           <Route path="/:location?" element={<Landing />} />
           <Route path="/impressum" element={<Impressum />} />
@@ -49,7 +21,7 @@ const handleLoad = () => {
           <Route path="*" element={<Landing />} />
         </Routes>
         <Footer />
-      </div>
+      
     </>
   );
 }

@@ -21,7 +21,17 @@ function App() {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
 
+    document.addEventListener("DOMContentLoaded", handleLoad);
+
+    return () => {
+      document.removeEventListener("DOMContentLoaded", handleLoad);
+    };
+  }, []);
   return (
     <>
       <div style={{ display: isLoading ? "block" : "none" }}>

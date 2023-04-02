@@ -11,20 +11,22 @@
 .teacher {
   width: 100%;
   display: flex;
-  height: 50rem;
+  flex-wrap: wrap;
+  max-height: 50rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .teacher_image {
   width: 100%;
-  height: 100%;
+  height: 50rem;
   display: flex;
   transition: all 1s ease-in-out;
   position: relative;
 }
 .teacher_image img {
   width: 100%;
+
   height: 100%;
   object-fit: cover;
   object-position: top;
@@ -62,4 +64,16 @@
   .teacher {
     height: 100%;
   }
+}
+.name_background {
+  position: absolute;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.096),
+    rgba(0, 0, 0, 0.062),
+    rgba(0, 0, 0, 0.918) 95%
+  );
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }

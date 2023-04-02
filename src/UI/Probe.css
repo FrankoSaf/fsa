@@ -1,32 +1,39 @@
 .probe_section {
   height: 50rem;
-  background: #C2A560;
+  background: #c2a560;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   justify-content: center;
 }
 .probe_title {
   color: white;
-  font-size:4rem
+  font-size: 4rem;
 }
 .probe_text {
-font-family:"Roboto Condensed", sans-serif;
-  margin-top:2rem;
-  display:block;
-  border-radius:5px;
-  padding:1rem 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 2rem;
+  display: block;
+  border-radius: 5px;
+  padding: 1rem 3rem;
   color: white;
-  background:rgb(54, 54, 54);
-  font-size:2.8rem;
+  background: rgb(54, 54, 54);
+  font-size: 2.8rem;
   text-transform: uppercase;
- 
 }
-@media (max-width:968px){
-    .probe_title{
-        text-align: center;
-        font-size:3.6rem;
-    }
+.probe_section a {
+  transition: all 0.5s;
+}
+.probe_section a:hover {
+  background-color: white;
+  color: rgb(54, 54, 54);
+  transform: scale(1.05);
+}
+@media (max-width: 968px) {
+  .probe_title {
+    text-align: center;
+    font-size: 3.6rem;
+  }
 }

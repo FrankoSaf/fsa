@@ -3,6 +3,8 @@ import React from "react";
 import EKG from "../assets/EKG.png";
 import { teachers } from "../assets/teacher";
 import "../UI/Teachers.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
 const Teachers = () => {
   return (
     <section className="teachers-section">
@@ -16,6 +18,7 @@ const Teachers = () => {
         {teachers.map((teacher, index) => (
           <div className="teacher">
             <div className="teacher_image">
+              <div className="name_background"></div>
               <p className="teacher_name">{teacher.name}</p>
               <Image
                 publicId={teacher.image}
@@ -28,8 +31,8 @@ const Teachers = () => {
                 responsiveUseBreakpoints="true"
                 responsiveTransformation={{
                   transformation: [
-                    { width: 256, height: 256, crop: "fill" },
-                    { width: 760, height: 760, crop: "fill" },
+                    { width: 256, height: 256 },
+                    { width: 760, height: 760 },
                     { width: 1070, height: 1070, crop: "fill" },
                     { width: 1320, height: 1320, crop: "fill" },
                     { width: 1520, height: 1520, crop: "fill" },

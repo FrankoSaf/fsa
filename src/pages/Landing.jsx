@@ -17,7 +17,7 @@ const Landing = () => {
   const navigate = useNavigate();
   const [loc, setLoc] = useState();
   const [isMobile, setIsMobile] = useState(false);
-
+  console.log(location);
   useEffect(() => {
     // Set isMobile state on initial load
     setIsMobile(window.innerWidth < 769);
@@ -32,14 +32,14 @@ const Landing = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(loc);
+
   useEffect(() => {
     // Add the class to the body element when the modal is shown
     if (location) {
       if (location.toLowerCase() === "neuss") {
         setLoc((prevLoc) => ({
           ...prevLoc,
-
+          name: "neuss",
           lat: 51.20087646292661,
           lng: 6.690204101221807,
           center: isMobile
@@ -49,6 +49,7 @@ const Landing = () => {
       } else if (location.toLowerCase() === "düsseldorf") {
         setLoc((prevLoc) => ({
           ...prevLoc,
+          name: "düsseldorf",
           lat: 51.23393353212118,
           lng: 6.779056499334493,
           center: isMobile
@@ -66,7 +67,7 @@ const Landing = () => {
       document.body.style.overflow = "auto";
       document.documentElement.style.overflow = "auto";
     }
-  }, [location, window.innerWidth]);
+  }, [location]);
   return (
     <>
       {!location && !loc && <Modal setLocation={setLoc} />}

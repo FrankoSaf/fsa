@@ -3,6 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 import "./map.css";
 const MapSquare = ({ location }) => {
+  console.log(location);
   return (
     <div className="contact_square">
       <div className="contact_details">
@@ -71,7 +72,11 @@ const MapSquare = ({ location }) => {
 
           <a
             className="whatsapp"
-            href="https://api.whatsapp.com/send?phone=4915141273622"
+            href={
+              location === "neuss"
+                ? "https://api.whatsapp.com/send?phone=4915141273622"
+                : " https://api.whatsapp.com/send?phone=4917677154511"
+            }
             aria-label="Whatsapp"
           >
             <div>

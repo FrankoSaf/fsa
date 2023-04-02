@@ -39,7 +39,12 @@
   border-right: none;
   border-image: linear-gradient(to right, #c2a560, #c2a560, rgb(51, 51, 51)) 1;
 }
-
+.social_links {
+  transition: all 0.5s;
+}
+.social_links:hover {
+  transform: scale(1.5);
+}
 .intro_logo {
   flex: 0.6;
   display: flex;
@@ -76,6 +81,11 @@
   height: 5rem;
   line-height: 5rem;
   text-align: center;
+  transition: all 0.5s;
+}
+.intro_titles a:hover {
+  background: rgb(54, 54, 54);
+  border: #d1b970 2px solid;
 }
 .intro_social {
   height: 5rem;

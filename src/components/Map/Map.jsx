@@ -8,11 +8,6 @@ import { mapStyles } from "../../assets/map";
 import EKG from "../../assets/EKG.png";
 
 const Map = ({ location, zoomLevel }) => {
-  const [currentLocation, setCurrentLocation] = useState(location);
-
-  useEffect(() => {
-    setCurrentLocation(location);
-  }, [location]);
   return (
     <section>
       {/* <div class="title_deco">
@@ -27,20 +22,20 @@ const Map = ({ location, zoomLevel }) => {
             bootstrapURLKeys={{
               key: "AIzaSyBWfVlEwLKClNW6xqX6YKk27v-nG1RVKMY",
             }}
-            defaultCenter={currentLocation.center}
+            defaultCenter={location.center}
             defaultZoom={18}
             options={{
               styles: mapStyles,
             }}
           >
             <LocationPin
-              lat={currentLocation.lat}
-              lng={currentLocation.lng}
-              text={currentLocation.address}
+              lat={location.lat}
+              lng={location.lng}
+              text={location.address}
             />
           </GoogleMapReact>
         </div>
-        <MapSquare location={currentLocation.name} />
+        <MapSquare location={location.name} />
       </div>
     </section>
   );

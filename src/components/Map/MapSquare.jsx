@@ -71,7 +71,7 @@ const MapSquare = ({ location }) => {
 
           <a
             className="whatsapp"
-            href="https://api.whatsapp.com/send?phone=4917664209354"
+            href="https://api.whatsapp.com/send?phone=4915141273622"
             aria-label="Whatsapp"
           >
             <div>

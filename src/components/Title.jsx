@@ -65,7 +65,7 @@ const Title = () => {
             </div>
           </div>
           <div className="intro_titles">
-            <p style={{ fontSize: "2rem" }}>
+            <p style={{ fontSize: "2rem", fontFamily: "Dosis, sans-serif" }}>
               Musikunterricht in Neuss und Düsseldorf. Du möchtest ein
               Instrument lernen? Wir unterstützen dich gerne dabei.
             </p>

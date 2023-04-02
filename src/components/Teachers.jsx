@@ -16,6 +16,7 @@ const Teachers = () => {
         {teachers.map((teacher, index) => (
           <div className="teacher">
             <div className="teacher_image">
+              <p className="teacher_name">{teacher.name}</p>
               <Image
                 publicId={teacher.image}
                 alt={`${teacher.name}`}

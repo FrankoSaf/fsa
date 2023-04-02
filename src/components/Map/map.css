@@ -70,9 +70,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.whatsapp {
-  width: 100%;
-}
 .formular {
   background: linear-gradient(to right, #867140, #d1ba71, #decc7f);
   display: block;
@@ -90,6 +87,7 @@
   margin: 0 auto;
   text-align: center;
   height: 6.5rem;
+  margin-top: 10px;
 }
 .whatsapp > div {
   width: 100%;

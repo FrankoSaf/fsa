@@ -7,11 +7,12 @@
   transform: translate(-50%, -50%);
   height: 25rem;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(54, 54, 54, 0.644);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .welcome h3 {
   font-size: 2.5rem;
@@ -36,7 +37,7 @@
 }
 .backdrop {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: rgba(54, 54, 54, 0.63);
   max-height: 100vh;
   width: 100%;
   z-index: 999;

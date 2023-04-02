@@ -10,19 +10,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const delay = 1000; // delay in milliseconds
-    const handleLoad = () => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, delay);
-    };
-    window.addEventListener("load", handleLoad);
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
-  useEffect(() => {
-    const handleLoad = () => {
+    
+const handleLoad = () => {
       setIsLoading(false);
     };
 
@@ -32,6 +21,7 @@ function App() {
       document.removeEventListener("DOMContentLoaded", handleLoad);
     };
   }, []);
+  
   return (
     <>
       <div style={{ display: isLoading ? "block" : "none" }}>

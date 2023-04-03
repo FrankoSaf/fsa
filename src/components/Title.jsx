@@ -13,18 +13,12 @@ const fourthBanner =
 const fifthBanner =
   "https://res.cloudinary.com/dnp7nm4iy/image/upload/v1680344929/IMG_6827_z7c1t4.jpg";
 const Title = () => {
-  const [images, setImages] = useState([
-    firstBanner,
-    secondBanner,
-    thirdBanner,
-    fourthBanner,
-    fifthBanner,
-  ]);
+  const [images, setImages] = useState([fifthBanner]);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 921) {
+      if (window.innerWidth < 960) {
         setImages([fifthBanner]);
         setIsSmallScreen(true);
       } else {
@@ -77,7 +71,11 @@ const Title = () => {
             </a>
           </div>
           <div className="intro_social">
-            <a href="#" className="social_links" aria-label="Instagram Link">
+            <a
+              href="https://www.instagram.com/finesoundacademy/?igshid=YmMyMTA2M2Y%3D"
+              className="social_links"
+              aria-label="Instagram Link"
+            >
               <IoLogoInstagram />
             </a>
             <a href="#" className="social_links" aria-label="Facebook Link">

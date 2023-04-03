@@ -6,6 +6,7 @@ import "../UI/Prices.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 const Prices = () => {
+  const screenWidth = window.innerWidth;
   return (
     <section className="prices">
       <div class="title_deco">
@@ -17,7 +18,7 @@ const Prices = () => {
       <div className="price_list">
         <div className="price_list-container">
           {prices.map((price, index) => {
-            return (
+            return screenWidth > 960 ? (
               <AnimationOnScroll
                 animateIn={` animate__fadeInRight animate__delay-${1 * index}s`}
               >
@@ -42,6 +43,27 @@ const Prices = () => {
                   </ul>
                 </div>
               </AnimationOnScroll>
+            ) : (
+              <div
+                className="price-card"
+                style={{
+                  background: `linear-gradient(to right,rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.397),rgba(0, 0, 0, 0.171)),url(${price.image}) no-repeat center/cover`,
+                }}
+              >
+                <h4 className="price-name">
+                  <span>{price.name.split(" ")[0]}</span> <br />
+                  {price.name.split(" ")[1]} {price.name.split(" ")[2]}
+                </h4>
+                <p className="price-desc">{price.description}</p>
+                <ul className="price-details">
+                  {price.list.map((item) => (
+                    <li>
+                      <BsCheckCircleFill />
+                      <p className="price-details-sub">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             );
           })}
         </div>

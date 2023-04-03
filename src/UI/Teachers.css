@@ -58,8 +58,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    background-color: red;
   }
   .teacher {
     height: 100%;

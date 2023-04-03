@@ -77,8 +77,8 @@
 }
 .intro_titles a {
   background: linear-gradient(to right, #b18d4d, #d1b970, #e5d588);
-  width: 20rem;
-  height: 5rem;
+  min-width: 20rem;
+  min-height: 5rem;
   line-height: 5rem;
   text-align: center;
   transition: all 0.5s;

@@ -1,53 +1,84 @@
 .teachers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 20rem;
   width: 100%;
 }
+
 .teachers_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .teacher {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-height: 50rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .teacher_image {
   width: 100%;
   height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   position: relative;
 }
+
 .teacher_image img {
   width: 100%;
-
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
+
 .teacher_image:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
   position: relative;
   z-index: 1;
 }
+
 .teacher_name {
   position: absolute;
   bottom: 0;
   left: 50%;
+  -webkit-transform: translate(-50%, -10%) rotate(-10deg);
   transform: translate(-50%, -10%) rotate(-10deg);
   font-size: 5rem;
   font-weight: bold;
   background: -webkit-linear-gradient(left, #6e5824, #d1ba71, #decc7f);
+  background: linear-gradient(to right, #6e5824, #d1ba71, #decc7f);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   font-family: "Maytra", sans-serif;
 }
+
 .teachers_wrapper {
   overflow-x: scroll;
   width: 100%;
@@ -55,14 +86,21 @@
 
 @media (max-width: 768px) {
   .teachers_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .teacher {
     height: 100%;
   }
 }
+
 .name_background {
   position: absolute;
   background: linear-gradient(

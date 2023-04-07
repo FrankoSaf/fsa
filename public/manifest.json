@@ -1,24 +1,24 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FSA",
+  "name": "Fine Sound Academy",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,w_64/v1680344909/Logo_fppvkk.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,h_192,w_192/v1680344909/Logo_fppvkk.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://res.cloudinary.com/dnp7nm4iy/image/upload/c_scale,h_512,w_512/v1680344909/Logo_fppvkk.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

@@ -3,7 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 import "./map.css";
 const MapSquare = ({ location }) => {
-  console.log(location);
+
   return (
     <div className="contact_square">
       <div className="contact_details">

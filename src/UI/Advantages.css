@@ -1,14 +1,18 @@
-
-
 .advantages_list-cont {
   flex: 0.7;
   height: 100%;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .advantages_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: auto 2rem auto 0;
   justify-content: space-around;
@@ -19,9 +23,11 @@
   background: url("../assets/otherimages/right.JPG") no-repeat center/cover;
 }
 .advantages_list-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 50vh;
-  font-family: "Dosis",sans-serif;
+  font-family: "Dosis", sans-serif;
   align-items: center;
   padding: 5rem 0;
   width: 80%;
